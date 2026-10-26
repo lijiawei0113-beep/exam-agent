@@ -9,11 +9,19 @@
 
 **数学：出卷 → 查看验证状态 → 对话换题 → 版本历史 → 导出 PDF**
 
-（视频 1）
+
+
+https://github.com/user-attachments/assets/dda13960-226d-4f4a-b5eb-26f3363895c6
+
+
 
 **英语：出卷 → "第二篇阅读太难了，换一篇" → 版本历史 → 导出 PDF**
 
-（视频 2）
+
+
+https://github.com/user-attachments/assets/3f1b27d9-4957-4e36-961a-15a688f234f8
+
+
 
 ## 功能
 
