@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>对话式试卷编制助手</title>
+<style>
+  :root {
+    --bg: #f4f1ea; --panel: #fffdf8; --ink: #22201c; --muted: #6f6a60; --line: #e2dccf;
+    --accent: #2f5d50; --accent-soft: #e3eee9; --warn: #a15c00; --warn-soft: #fbefd9;
+    --bad: #a3322a; --bad-soft: #f8e1de; --info: #3a5a8c; --info-soft: #e3eaf6;
+    --paper: #ffffff; --mono: ui-monospace, "SF Mono", Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 15px/1.6 -apple-system, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+         color: var(--ink); background: var(--bg); }
+  header { display: flex; align-items: baseline; gap: 16px; padding: 14px 24px; border-bottom: 1px solid var(--line);
+           background: var(--panel); flex-wrap: wrap; }
+  header h1 { margin: 0; font-size: 18px; letter-spacing: .02em; }
+  header .sub { color: var(--muted); font-size: 13px; }
+  header .spacer { flex: 1; }
+  header select { font: inherit; font-size: 13px; padding: 4px 8px; border: 1px solid var(--line); border-radius: 6px;
+                  background: #fff; max-width: 280px; }
+  main { display: grid; grid-template-columns: minmax(320px, 420px) 1fr; height: calc(100vh - 56px); }
+  @media (max-width: 860px) { main { grid-template-columns: 1fr; height: auto; } .chat { height: 70vh; } }
+
+  /* ---------- 对话 ---------- */
+  .chat { display: flex; flex-direction: column; border-right: 1px solid var(--line); background: var(--panel); min-height: 0; }
+  .log { flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+  .msg { max-width: 92%; padding: 9px 12px; border-radius: 10px; white-space: pre-wrap; word-break: break-word; }
+  .msg.me { align-self: flex-end; background: var(--accent); color: #fff; border-bottom-right-radius: 3px; }
+  .msg.bot { align-self: flex-start; background: #f1ede4; border-bottom-left-radius: 3px; }
+  .msg.err { align-self: flex-start; background: var(--bad-soft); color: var(--bad); }
+  .msg .small { font-size: 12.5px; color: var(--muted); }
+  .msg ul { margin: 4px 0 0; padding-left: 18px; }
+  .steps { list-style: none; margin: 6px 0 0; padding: 0; font-size: 13px; }
+  .steps li { padding: 1px 0; color: var(--muted); }
+  .steps li.cur { color: var(--ink); }
+  .steps li .d { color: var(--muted); }
+  .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); margin-right: 6px;
+         vertical-align: middle; }
+  .cur .dot { animation: pulse 1s infinite; }
+  @keyframes pulse { 50% { opacity: .25; } }
+  .examples { padding: 8px 16px 0; display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { border: 1px solid var(--line); background: #fff; border-radius: 999px; padding: 3px 10px; font-size: 12.5px;
+          cursor: pointer; color: var(--ink); }
+  .chip:hover { border-color: var(--accent); color: var(--accent); }
+  .composer { display: flex; gap: 8px; padding: 12px 16px 16px; }
+  .composer textarea { flex: 1; resize: none; height: 64px; font: inherit; padding: 8px 10px; border: 1px solid var(--line);
+                       border-radius: 8px; background: #fff; }
+  button { font: inherit; cursor: pointer; border-radius: 8px; border: 1px solid var(--accent); background: var(--accent);
+           color: #fff; padding: 6px 14px; }
+  button.ghost { background: #fff; color: var(--accent); }
+  button.danger { color: #b42318; border-color: #e7b4ae; }
+  button:disabled { opacity: .45; cursor: default; }
+  header button { padding: 5px 10px; font-size: 13px; margin-left: 6px; }
+  button:disabled { opacity: .5; cursor: default; }
+
+  /* ---------- 试卷 ---------- */
+  .right { overflow-y: auto; padding: 20px 28px 40px; min-height: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 14px; }
+  .toolbar label { font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 4px; }
+  .tabs { display: flex; gap: 2px; margin-right: 12px; }
+  .tab { background: transparent; color: var(--muted); border: none; border-bottom: 2px solid transparent; border-radius: 0;
+         padding: 4px 8px; }
+  .tab.on { color: var(--ink); border-bottom-color: var(--accent); }
+  .empty { color: var(--muted); padding: 60px 0; text-align: center; }
+  .sheet { background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 28px 36px;
+           max-width: 860px; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
+  .sheet h2 { text-align: center; margin: 0 0 4px; font: 600 20px/1.4 "Songti SC", "SimSun", serif; }
+  .meta { text-align: center; color: var(--muted); font-size: 13px; margin-bottom: 10px; }
+  .counts { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin-bottom: 18px; }
+  .sec { font: 600 15px/1.5 "Songti SC", "SimSun", serif; margin: 22px 0 8px; }
+  .q { padding: 8px 10px; margin: 0 -10px; border-radius: 6px; position: relative; }
+  .q.changed { background: #fff6d6; transition: background 2s; }
+  .q .stem { white-space: pre-wrap; font-family: "Songti SC", "SimSun", serif; }
+  .q .opts { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 2px 16px; margin: 4px 0 0 18px;
+             font-family: "Songti SC", "SimSun", serif; }
+  .q .ans { margin: 6px 0 0 18px; font-size: 13.5px; background: #f7f5ef; padding: 6px 10px; border-radius: 6px;
+            white-space: pre-wrap; }
+  .q .ans b { color: var(--accent); }
+  .q .vrow { display: flex; gap: 8px; align-items: center; margin: 4px 0 0 18px; font-size: 12.5px; color: var(--muted);
+             flex-wrap: wrap; }
+  .q .vrow button { padding: 1px 8px; font-size: 12px; }
+  .badge { font-size: 12px; padding: 1px 8px; border-radius: 999px; white-space: nowrap; }
+  .b-tool, .b-teacher { background: var(--accent-soft); color: var(--accent); }
+  .b-agreed { background: var(--info-soft); color: var(--info); }
+  .b-unverified { background: var(--warn-soft); color: var(--warn); }
+  .b-problem { background: var(--bad-soft); color: var(--bad); }
+  .b-none { background: #eee; color: var(--muted); }
+  table.md { border-collapse: collapse; margin: 6px 0; font-size: 14px; }
+  table.md td, table.md th { border: 1px solid #999; padding: 2px 10px; text-align: center; }
+  table.grid { border-collapse: collapse; width: 100%; font-size: 13.5px; background: #fff; }
+  table.grid th, table.grid td { border: 1px solid var(--line); padding: 5px 8px; text-align: left; vertical-align: top; }
+  table.grid th { background: #f6f3ec; font-weight: 600; }
+  .note { font-size: 12.5px; color: var(--muted); margin-top: 10px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>对话式试卷编制助手</h1>
+  <span class="spacer"></span>
+  <select id="papers" title="打开已有试卷"><option value="">打开已有试卷…</option></select>
+  <button class="ghost" id="newPaper" title="清空当前页面，重新出一份卷（不删除已保存的试卷）">新建试卷</button>
+  <button class="ghost danger" id="delPaper" disabled title="删除当前这份试卷的全部版本">删除此试卷</button>
+  <button class="ghost danger" id="clearAll" title="删除所有已保存的试卷">清空全部</button>
+</header>
+<main>
+  <section class="chat">
+    <div class="log" id="log">
+      <div class="msg bot">你好！用一句话告诉我要出什么卷子，出好后可以继续用对话修改，也可以和我讨论这份卷子，例如“第 3 题太难，换一道基础题”“这份卷有没有超纲的题？”“把第 3 题改回原来的”。</div>
+    </div>
+    <div class="examples" id="examples"></div>
+    <div class="composer">
+      <textarea id="input" placeholder="例如：出一份小学3年级的数学试卷，总分100分，共20题"></textarea>
+      <button id="send">发送</button>
+    </div>
+  </section>
+  <section class="right">
+    <div class="toolbar">
+      <div class="tabs">
+        <button class="tab on" data-tab="paper">试卷</button>
+        <button class="tab" data-tab="blueprint">蓝图</button>
+        <button class="tab" data-tab="history">版本历史</button>
+      </div>
+      <label><input type="checkbox" id="showAns"> 显示答案与解析</label>
+      <span style="flex:1"></span>
+      <button class="ghost" id="pdfS" disabled>学生版 PDF</button>
+      <button class="ghost" id="pdfA" disabled>答案版 PDF</button>
+      <button class="ghost" id="undo" disabled>撤销上一步</button>
+    </div>
+    <div id="view"><div class="empty">试卷会显示在这里</div></div>
+  </section>
+</main>
+<script>
+const EXAMPLES = {
+  "出卷": ["出一份一元一次方程试卷，10 道题，选择、填空、计算都有，满分 100 分。",
+           "出一份小学3年级的数学试卷，总分100分，共20题",
+           "出一份三年级上册英语试卷，总分100分，共20题"],
+  "修改": ["第 3 题太难，换一道基础题，其他题别动", "这份卷难度合适吗？有没有超纲的题？",
+           "第 5 题答案为什么是这个？", "选择题答案分布是不是太集中了？",
+           "把第 3 题改回原来的", "计算题答案都要是整数"],
+};
+const STATUS_TIP = {
+  tool: "工具独立算出答案并与答案一致", agreed: "看不到答案的盲解 Agent 独立作答结果一致（同一模型可能犯同样的错）",
+  unverified: "没有工具能核对，请老师确认", problem: "审核发现的问题返修后仍存在", teacher: "老师已人工确认",
+  none: "未审核",
+};
+let state = { paper: null, tab: "paper", busy: false, changed: new Set() };
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+function renderExamples() {
+  const mode = state.paper ? "修改" : "出卷";
+  $("examples").innerHTML = EXAMPLES[mode].map((t) => `<button class="chip">${esc(t)}</button>`).join("");
+  [...$("examples").children].forEach((b) => b.onclick = () => { $("input").value = b.textContent; $("input").focus(); });
+}
+
+function addMsg(cls, html) {
+  const d = document.createElement("div");
+  d.className = "msg " + cls; d.innerHTML = html;
+  $("log").appendChild(d); $("log").scrollTop = 1e9; return d;
+}
+
+// 题干里的 Markdown 表格（统计表题）画成真正的表格，其余保留换行
+function stemHtml(stem) {
+  const lines = stem.split("\n"); let out = [], rows = [];
+  const flush = () => { if (!rows.length) return;
+    out.push("<table class='md'>" + rows.map((r, i) => "<tr>" + r.map((c) => i ? `<td>${esc(c)}</td>` : `<th>${esc(c)}</th>`).join("") + "</tr>").join("") + "</table>");
+    rows = []; };
+  for (const l of lines) {
+    const t = l.trim();
+    if (t.startsWith("|") && t.split("|").length > 2) {
+      if (!/^\|?\s*:?-{2,}/.test(t)) rows.push(t.replace(/^\||\|$/g, "").split("|").map((c) => c.trim()));
+    } else { flush(); out.push(esc(l)); }
+  }
+  flush(); return out.join("\n");
+}
+
+function render() {
+  const p = state.paper; const v = $("view");
+  ["pdfS", "pdfA", "undo", "delPaper"].forEach((id) => $(id).disabled = !p || state.busy);
+  ["newPaper", "clearAll"].forEach((id) => $(id).disabled = state.busy);
+  document.querySelectorAll(".tab").forEach((t) => t.classList.toggle("on", t.dataset.tab === state.tab));
+  if (!p) { v.innerHTML = `<div class="empty">试卷会显示在这里</div>`; return; }
+  if (state.tab === "blueprint") {
+    v.innerHTML = `<div class="sheet"><h2>出卷蓝图（双向细目表）</h2><div class="meta">${esc(p.scope || p.request.scope)}</div>
+      <table class="grid"><tr><th>题号</th><th>题型</th><th>分值</th><th>知识点</th><th>难度</th><th>依据</th></tr>
+      ${p.blueprint.map((s) => `<tr><td>${s.position}</td><td>${esc(s.qtype)}</td><td>${s.score}</td><td>${esc(s.knowledge_point)}</td><td>${esc(s.difficulty)}</td><td>${esc(s.kp_id || "-")}</td></tr>`).join("")}
+      </table><div class="note">题型、分值、统计由程序计算；“依据”是课程知识库卡片编号。</div></div>`;
+    return;
+  }
+  if (state.tab === "history") {
+    v.innerHTML = `<div class="sheet"><h2>版本历史</h2><div class="meta">每次修改都保存为新版本，历史不改写；撤销也记为新版本</div>
+      <table class="grid"><tr><th>版本</th><th>来自</th><th>操作</th><th>说明</th><th>时间</th></tr>
+      ${(p.history || []).map((h) => `<tr><td>v${h.version}</td><td>${h.parent_version ? "v" + h.parent_version : "-"}</td><td>${esc(h.operation)}</td><td>${esc(h.summary)}</td><td>${esc(h.created_at.replace("T", " ").slice(0, 19))}</td></tr>`).join("")}
+      </table></div>`;
+    return;
+  }
+  const show = $("showAns").checked;
+  const counts = Object.entries(p.status_counts).map(([k, n]) => `<span class="badge b-${keyOf(k)}">${esc(k)} ${n}</span>`).join("");
+  v.innerHTML = `<div class="sheet"><h2>${esc(p.title)}</h2>
+    <div class="meta">${esc(p.request.scope)} · ${p.request.question_count} 题 · 满分 ${p.request.total_score} 分 · v${p.version}
+      ${p.request.constraints.length ? " · 约束：" + esc(p.request.constraints.join("；")) : ""}</div>
+    <div class="counts">${counts}</div>
+    ${p.sections.map((sec) => `<div class="sec">${esc(sec.title)}</div>` + sec.questions.map((q) => `
+      <div class="q ${state.changed.has(q.slot_id) ? "changed" : ""}">
+        <div class="stem">${q.no}. ${stemHtml(q.stem)}</div>
+        ${q.options.length ? `<div class="opts">${q.options.map((o, i) => `<div>${"ABCD"[i]}. ${esc(o)}</div>`).join("")}</div>` : ""}
+        ${show ? `<div class="ans"><b>答案</b> ${esc(q.answer)}\n<b>解析</b> ${esc(q.analysis)}</div>` : ""}
+        <div class="vrow"><span class="badge b-${q.status_key}" title="${esc(STATUS_TIP[q.status_key])}">${esc(q.status)}</span>
+          <span>${esc(q.method)}${q.detail ? " · " + esc(q.detail).slice(0, 80) : ""}</span>
+          ${["unverified", "problem", "agreed"].includes(q.status_key) ? `<button class="ghost" data-confirm="${q.no}">我已核对，确认</button>` : ""}
+        </div></div>`).join("")).join("")}
+    <div class="note">“独立复核一致”只表示两次模型作答结果相同，不等于已证实；“待老师确认”是没有工具能核对的题。</div></div>`;
+  v.querySelectorAll("[data-confirm]").forEach((b) => b.onclick = () => confirmQ(+b.dataset.confirm));
+}
+const keyOf = (label) => ({"工具验证":"tool","独立复核一致":"agreed","待老师确认":"unverified","存在未解决问题":"problem","老师已确认":"teacher","未审核":"none"}[label] || "none");
+
+async function streamPost(url, text, onEvent) {
+  const res = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ text }) });
+  if (!res.ok) { const e = await res.json().catch(() => ({})); throw new Error(e.detail ? JSON.stringify(e.detail) : res.statusText); }
+  const reader = res.body.getReader(); const dec = new TextDecoder(); let buf = "";
+  for (;;) {
+    const { value, done } = await reader.read(); if (done) break;
+    buf += dec.decode(value, { stream: true });
+    let i; while ((i = buf.indexOf("\n\n")) >= 0) {
+      const chunk = buf.slice(0, i); buf = buf.slice(i + 2);
+      if (chunk.startsWith("data: ")) onEvent(JSON.parse(chunk.slice(6)));
+    }
+  }
+}
+
+function setBusy(b) { state.busy = b; $("send").disabled = b; $("input").disabled = b; render(); }
+
+function reviewHtml(r) {
+  if (!r) return "";
+  const stop = { passed: "全部通过", max_rounds: "达到最大返修轮数", no_progress: "返修没有进展，已停止", repair_failed: "返修失败" }[r.stop_reason] || r.stop_reason;
+  let h = `<div class="small">审核：发现 ${r.initial.length} 处必须修改，返修 ${r.rounds} 轮，${stop}</div>`;
+  const items = [...r.initial.map((f) => (r.remaining.some((x) => x.slot_id === f.slot_id && x.code === f.code) ? "未修复：" : "已修复：") + f.message),
+                 ...r.suggestions.slice(0, 4).map((f) => "建议：" + f.message)];
+  if (items.length) h += "<ul class='small'>" + items.map((t) => `<li>${esc(t).slice(0, 160)}</li>`).join("") + "</ul>";
+  return h;
+}
+
+async function send() {
+  const text = $("input").value.trim(); if (!text || state.busy) return;
+  $("input").value = ""; addMsg("me", esc(text)); setBusy(true);
+  const box = addMsg("bot", `<div class="small">处理中…</div><ul class="steps"></ul>`);
+  const steps = box.querySelector(".steps"); const t0 = Date.now();
+  const url = state.paper ? `/api/papers/${state.paper.paper_id}/messages` : "/api/papers";
+  try {
+    await streamPost(url, text, (ev) => {
+      if (ev.type === "progress") {
+        steps.querySelectorAll("li").forEach((li) => li.classList.remove("cur"));
+        const li = document.createElement("li"); li.className = "cur";
+        li.innerHTML = `<span class="dot"></span>${esc(ev.label)} <span class="d">${esc(ev.detail || "")}</span>`;
+        steps.appendChild(li); $("log").scrollTop = 1e9;
+      } else if (ev.type === "error") {
+        box.className = "msg err"; box.innerHTML = esc(ev.message);
+      } else if (ev.type === "result") {
+        const secs = Math.round((Date.now() - t0) / 1000);
+        let head = "";
+        if (ev.kind === "created") head = "已生成试卷。" + (ev.assumptions.length ? "\n系统做了以下假设：\n· " + ev.assumptions.join("\n· ") : "");
+        else head = ev.reply + (ev.warnings?.length ? "\n注意：" + ev.warnings.join("；") : "");
+        const changes = (ev.changes || []).filter((c) => ["content", "added"].includes(c.kind));
+        state.changed = new Set(changes.map((c) => c.slot_id));
+        box.innerHTML = esc(head) + (changes.length ? `<div class="small">改动了 ${changes.length} 道题（右侧黄色标出），其余题内容经指纹校验保持不变</div>` : "")
+          + reviewHtml(ev.review) + `<div class="small">用时 ${secs} 秒 · 模型调用 ${ev.totals.llm_calls} 次</div>`;
+        if (ev.paper) { state.paper = ev.paper; state.tab = "paper"; loadList(); }
+        if (ev.kind === "export") downloadBoth();
+      }
+    });
+  } catch (e) { box.className = "msg err"; box.textContent = "请求失败：" + e.message; }
+  setBusy(false); renderExamples();
+}
+
+async function api(path, opts) {
+  const res = await fetch(path, opts); const body = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(body.detail || res.statusText); return body;
+}
+async function confirmQ(no) {
+  try { state.paper = await api(`/api/papers/${state.paper.paper_id}/confirm`, { method: "POST",
+        headers: { "Content-Type": "application/json" }, body: JSON.stringify({ positions: [no] }) });
+        addMsg("bot", `已将第 ${no} 题标记为“老师已确认”，保存为 v${state.paper.version}`); render(); }
+  catch (e) { addMsg("err", esc(e.message)); }
+}
+async function undo() {
+  try { state.paper = await api(`/api/papers/${state.paper.paper_id}/undo`, { method: "POST" }); state.changed = new Set();
+        addMsg("bot", `已撤销上一次修改，记为新版本 v${state.paper.version}`); render(); }
+  catch (e) { addMsg("err", esc(e.message)); }
+}
+function downloadBoth() { ["student", "answers"].forEach((k) => window.open(`/api/papers/${state.paper.paper_id}/pdf/${k}`, "_blank")); }
+async function loadList() {
+  try { const list = await api("/api/papers");
+    $("papers").innerHTML = `<option value="">打开已有试卷…</option>` + list.slice(0, 30).map((r) =>
+      `<option value="${esc(r.paper_id)}">${esc(r.title)} · v${r.current_version} · ${esc(r.created_at.slice(5, 16).replace("T", " "))}</option>`).join("");
+  } catch (e) { /* 列表加载失败不影响使用 */ }
+}
+$("papers").onchange = async (e) => {
+  if (!e.target.value) return;
+  state.paper = await api(`/api/papers/${e.target.value}`); state.changed = new Set(); state.tab = "paper";
+  addMsg("bot", `已打开《${esc(state.paper.title)}》v${state.paper.version}，可以继续用对话修改。`); render(); renderExamples();
+};
+const WELCOME = $("log").innerHTML;
+function resetPage(note) {
+  state.paper = null; state.changed = new Set(); state.tab = "paper"; $("papers").value = "";
+  $("log").innerHTML = WELCOME; if (note) addMsg("bot", note); render(); renderExamples(); $("input").focus();
+}
+$("newPaper").onclick = () => resetPage("好的，请描述要出的新试卷。之前的试卷已保存，可以从右上角重新打开。");
+$("delPaper").onclick = async () => {
+  const p = state.paper; if (!p) return;
+  if (!confirm(`确定删除《${p.title}》吗？这份试卷的全部 ${p.version} 个版本都会被删除，无法恢复。`)) return;
+  try { await api(`/api/papers/${p.paper_id}`, { method: "DELETE" }); await loadList();
+        resetPage(`已删除《${esc(p.title)}》。`); }
+  catch (e) { addMsg("err", esc(e.message)); }
+};
+$("clearAll").onclick = async () => {
+  if (!confirm("确定清空全部试卷吗？所有试卷和版本都会被删除，无法恢复。")) return;
+  try { const r = await api("/api/papers", { method: "DELETE" }); await loadList();
+        resetPage(`已清空全部试卷（共 ${r.deleted_count} 份）。`); }
+  catch (e) { addMsg("err", esc(e.message)); }
+};
+$("send").onclick = send;
+$("input").onkeydown = (e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(); } };
+$("showAns").onchange = render;
+$("undo").onclick = undo;
+$("pdfS").onclick = () => window.open(`/api/papers/${state.paper.paper_id}/pdf/student`, "_blank");
+$("pdfA").onclick = () => window.open(`/api/papers/${state.paper.paper_id}/pdf/answers`, "_blank");
+document.querySelectorAll(".tab").forEach((t) => t.onclick = () => { state.tab = t.dataset.tab; render(); });
+renderExamples(); loadList(); render();
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+{"id": "r01", "tag": "term", "query": "去分母", "gold": ["M7A-05-07"], "kind": "kp"}
+{"id": "r02", "tag": "term", "query": "合并同类项", "gold": ["M7A-04-05"], "kind": "kp"}
+{"id": "r03", "tag": "term", "query": "同类项的判断", "gold": ["M7A-04-04"], "kind": "kp"}
+{"id": "r04", "tag": "term", "query": "单项式的系数和次数", "gold": ["M7A-04-01"], "kind": "kp"}
+{"id": "r05", "tag": "term", "query": "等式的基本性质", "gold": ["M7A-05-04"], "kind": "kp"}
+{"id": "r06", "tag": "term", "query": "代数式求值", "gold": ["M7A-03-04"], "kind": "kp"}
+{"id": "r07", "tag": "term", "query": "绝对值", "gold": ["M7A-01-03"], "kind": "kp"}
+{"id": "r08", "tag": "term", "query": "科学记数法", "gold": ["M7A-02-04"], "kind": "kp"}
+{"id": "r09", "tag": "term", "query": "工程问题", "gold": ["M7A-05-11"], "kind": "kp"}
+{"id": "r10", "tag": "term", "query": "一元一次方程的定义", "gold": ["M7A-05-02"], "kind": "kp"}
+{"id": "r11", "tag": "term", "query": "去括号法则", "gold": ["M7A-04-06"], "kind": "kp"}
+{"id": "r12", "tag": "term", "query": "有理数的乘方", "gold": ["M7A-02-03"], "kind": "kp"}
+{"id": "r13", "tag": "paraphrase", "query": "把带x的项挪到等号左边，常数挪到右边", "gold": ["M7A-05-05"], "kind": "kp"}
+{"id": "r14", "tag": "paraphrase", "query": "方程两边同时乘6把分数消掉", "gold": ["M7A-05-07"], "kind": "kp"}
+{"id": "r15", "tag": "paraphrase", "query": "两辆车从两地出发面对面开，多久碰头", "gold": ["M7A-05-12"], "kind": "kp"}
+{"id": "r16", "tag": "paraphrase", "query": "商品按标价的八成卖出去还能赚两成", "gold": ["M7A-05-13"], "kind": "kp"}
+{"id": "r17", "tag": "paraphrase", "query": "一项活儿甲10天干完，乙15天干完，两人一起干要几天", "gold": ["M7A-05-11"], "kind": "kp"}
+{"id": "r18", "tag": "paraphrase", "query": "一个工人一天能做螺丝或者螺帽，怎么分人刚好配成套", "gold": ["M7A-05-10"], "kind": "kp"}
+{"id": "r19", "tag": "paraphrase", "query": "括号前面是减号，拆开后里面每一项都要换符号", "gold": ["M7A-04-06"], "kind": "kp"}
+{"id": "r20", "tag": "paraphrase", "query": "比某个数的三倍少二，用含字母的式子写出来", "gold": ["M7A-03-03"], "kind": "kp"}
+{"id": "r21", "tag": "paraphrase", "query": "把一个数代进去看看左右两边是不是相等", "gold": ["M7A-05-03"], "kind": "kp"}
+{"id": "r22", "tag": "paraphrase", "query": "3x²y 前面的数字是多少，一共是几次", "gold": ["M7A-04-01"], "kind": "kp"}
+{"id": "r23", "tag": "paraphrase", "query": "这个多项式有几项、最高是几次", "gold": ["M7A-04-02"], "kind": "kp"}
+{"id": "r24", "tag": "paraphrase", "query": "先把式子化简，再把 a=-1 代进去算", "gold": ["M7A-04-07"], "kind": "kp"}
+{"id": "r25", "tag": "paraphrase", "query": "已知 a+b 等于 3，求 2a+2b-1", "gold": ["M7A-03-05"], "kind": "kp"}
+{"id": "r26", "tag": "paraphrase", "query": "两种手机套餐，每月打多少分钟电话时花费一样", "gold": ["M7A-05-14"], "kind": "kp"}
+{"id": "r27", "tag": "paraphrase", "query": "把长方体的铁块熔化后铸成圆柱，求圆柱的高", "gold": ["M7A-05-15"], "kind": "kp"}
+{"id": "r28", "tag": "paraphrase", "query": "两个负数谁大谁小", "gold": ["M7A-01-04"], "kind": "kp"}
+{"id": "r29", "tag": "paraphrase", "query": "某数在数轴上离原点有几个单位", "gold": ["M7A-01-03"], "kind": "kp"}
+{"id": "r30", "tag": "paraphrase", "query": "收入记作正，支出记作负", "gold": ["M7A-01-01"], "kind": "kp"}
+{"id": "r31", "tag": "paraphrase", "query": "乘号可以省略，数字要写在字母前面", "gold": ["M7A-03-02"], "kind": "kp"}
+{"id": "r32", "tag": "paraphrase", "query": "已知关于x的方程的解是2，求方程里的m", "gold": ["M7A-05-03"], "kind": "kp"}
+{"id": "r33", "tag": "paraphrase", "query": "船在河里顺水和逆水航行", "gold": ["M7A-05-12"], "kind": "kp"}
+{"id": "r34", "tag": "paraphrase", "query": "日历上竖着三个数的和", "gold": ["M7A-04-08"], "kind": "kp"}
+{"id": "r35", "tag": "typo", "query": "去分毋", "gold": ["M7A-05-07"], "kind": "kp"}
+{"id": "r36", "tag": "typo", "query": "合并同类相", "gold": ["M7A-04-05"], "kind": "kp"}
+{"id": "r37", "tag": "typo", "query": "移相要变号", "gold": ["M7A-05-05"], "kind": "kp"}
+{"id": "r38", "tag": "typo", "query": "等试的性质", "gold": ["M7A-05-04"], "kind": "kp"}
+{"id": "r39", "tag": "typo", "query": "代数试的值", "gold": ["M7A-03-04"], "kind": "kp"}
+{"id": "r40", "tag": "typo", "query": "销售利闰问题", "gold": ["M7A-05-13"], "kind": "kp"}
+{"id": "r41", "tag": "request", "query": "出一份一元一次方程应用题专项，重点考行程和工程问题，10 道题", "gold": ["M7A-05-12", "M7A-05-11"], "kind": "kp"}
+{"id": "r42", "tag": "request", "query": "第四章整式加减的单元卷，要有同类项和去括号", "gold": ["M7A-04-04", "M7A-04-06"], "kind": "kp"}
+{"id": "r43", "tag": "request", "query": "出几道含分数系数的解方程计算题", "gold": ["M7A-05-07"], "kind": "kp"}
+{"id": "r44", "tag": "request", "query": "来一道打折销售的应用题，难度中等", "gold": ["M7A-05-13"], "kind": "kp"}
+{"id": "r45", "tag": "request", "query": "代数式那一章，考列代数式和求值", "gold": ["M7A-03-03", "M7A-03-04"], "kind": "kp"}
+{"id": "r46", "tag": "request", "query": "出一道已知同类项求指数 m+n 的选择题", "gold": ["M7A-04-04"], "kind": "kp"}
+{"id": "r47", "tag": "request", "query": "加一道比赛积分的应用题", "gold": ["M7A-05-14"], "kind": "kp"}
+{"id": "r48", "tag": "request", "query": "出一道带括号的解方程基础题", "gold": ["M7A-05-06"], "kind": "kp"}
+{"id": "r49", "tag": "out_of_scope", "query": "解二元一次方程组", "gold": ["L-SYS"], "kind": "kp"}
+{"id": "r50", "tag": "out_of_scope", "query": "用代入消元法求x和y", "gold": ["L-SYS"], "kind": "kp"}
+{"id": "r51", "tag": "out_of_scope", "query": "解不等式 2x-1>3 并在数轴上表示解集", "gold": ["L-INEQ"], "kind": "kp"}
+{"id": "r52", "tag": "out_of_scope", "query": "求m的取值范围", "gold": ["L-INEQ"], "kind": "kp"}
+{"id": "r53", "tag": "out_of_scope", "query": "用配方法解方程", "gold": ["L-QUAD"], "kind": "kp"}
+{"id": "r54", "tag": "out_of_scope", "query": "用平方差公式计算", "gold": ["L-MUL"], "kind": "kp"}
+{"id": "r55", "tag": "out_of_scope", "query": "分式方程的增根", "gold": ["L-FRAC"], "kind": "kp"}
+{"id": "r56", "tag": "out_of_scope", "query": "求16的算术平方根", "gold": ["L-REAL"], "kind": "kp"}
+{"id": "r57", "tag": "out_of_scope", "query": "画出一次函数 y=2x+1 的图象", "gold": ["L-FUNC"], "kind": "kp"}
+{"id": "r58", "tag": "standard", "query": "课标对解一元一次方程的要求", "gold": ["S-EQ-3"], "kind": "standard"}
+{"id": "r59", "tag": "standard", "query": "有理数混合运算一般控制在几步以内", "gold": ["S-NUM-3"], "kind": "standard"}
+{"id": "r60", "tag": "standard", "query": "课标里关于等式性质的要求", "gold": ["S-EQ-2"], "kind": "standard"}
+{"id": "r61", "tag": "standard", "query": "整式加减要掌握哪些运算法则", "gold": ["S-POL-1"], "kind": "standard"}
+{"id": "r62", "tag": "standard", "query": "要求学生检验方程的解是否符合实际", "gold": ["S-EQ-5"], "kind": "standard"}
+{"id": "r63", "tag": "standard", "query": "用代数式表示数量关系的课程要求", "gold": ["S-ALG-2"], "kind": "standard"}

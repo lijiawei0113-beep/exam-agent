@@ -1,0 +1,100 @@
+{"id": "r001", "group": "数学", "grade": 1, "text": "出一份1年级下册数学试卷，8道题，满分120分", "expect": "paper"}
+{"id": "r002", "group": "数学", "grade": 1, "text": "1年级下册数学练习，8道题", "expect": "paper"}
+{"id": "r003", "group": "数学", "grade": 1, "text": "帮我出1年级上册第3单元的数学小测，5道题", "expect": "paper"}
+{"id": "r004", "group": "数学", "grade": 1, "text": "小学一年级上册数学练习，5道题", "expect": "paper"}
+{"id": "r005", "group": "数学", "grade": 1, "text": "一年级下册数学练习，5道题", "expect": "paper"}
+{"id": "r006", "group": "数学", "grade": 1, "text": "小学一年级下册数学练习，10道题", "expect": "paper"}
+{"id": "r007", "group": "数学", "grade": 2, "text": "给2年级学生出一套数学练习，10道，选择、填空、计算都要有", "expect": "paper"}
+{"id": "r008", "group": "数学", "grade": 2, "text": "帮我出二年级下册第5单元的数学小测，10道题", "expect": "paper"}
+{"id": "r009", "group": "数学", "grade": 2, "text": "2年级下册数学单元测试，考“表内除法（一）”，5题", "expect": "paper"}
+{"id": "r010", "group": "数学", "grade": 2, "text": "2年级数学练习，10道题", "expect": "paper"}
+{"id": "r011", "group": "数学", "grade": 2, "text": "二年级上册数学单元测试，考“长度单位”，10题", "expect": "paper"}
+{"id": "r012", "group": "数学", "grade": 2, "text": "给二年级学生出一套数学练习，12道，选择、填空、计算都要有", "expect": "paper"}
+{"id": "r013", "group": "数学", "grade": 2, "text": "出一份小学二年级数学试卷，8道题，满分100分", "expect": "paper"}
+{"id": "r014", "group": "数学", "grade": 2, "text": "2年级下册数学单元测试，考“克和千克”，12题", "expect": "paper"}
+{"id": "r015", "group": "数学", "grade": 3, "text": "帮我出三年级上册第4单元的数学小测，10道题", "expect": "paper"}
+{"id": "r016", "group": "数学", "grade": 3, "text": "三年级数学，10题，难度中等，计算题多一点", "expect": "paper"}
+{"id": "r017", "group": "数学", "grade": 3, "text": "三年级下册数学单元测试，考“除数是一位数的除法”，20题", "expect": "paper"}
+{"id": "r018", "group": "数学", "grade": 3, "text": "帮我出3年级上册第4单元的数学小测，10道题", "expect": "paper"}
+{"id": "r019", "group": "数学", "grade": 3, "text": "三年级数学，10题，难度中等，计算题多一点", "expect": "paper"}
+{"id": "r020", "group": "数学", "grade": 3, "text": "三年级数学，25题，难度中等，计算题多一点", "expect": "paper"}
+{"id": "r021", "group": "数学", "grade": 3, "text": "3年级下册数学期中卷，10道题，总分100，要有应用题", "expect": "paper"}
+{"id": "r022", "group": "数学", "grade": 3, "text": "3年级数学，8题，难度中等，计算题多一点", "expect": "paper"}
+{"id": "r023", "group": "数学", "grade": 3, "text": "帮我出三年级上册第1单元的数学小测，25道题", "expect": "paper"}
+{"id": "r024", "group": "数学", "grade": 3, "text": "帮我出小学三年级上册第1单元的数学小测，8道题", "expect": "paper"}
+{"id": "r025", "group": "数学", "grade": 4, "text": "出一份小学四年级下册数学试卷，10道题，满分50分", "expect": "paper"}
+{"id": "r026", "group": "数学", "grade": 4, "text": "四年级数学，10题，难度中等，计算题多一点", "expect": "paper"}
+{"id": "r027", "group": "数学", "grade": 4, "text": "四年级下册数学单元测试，考“小数的意义和性质”，15题", "expect": "paper"}
+{"id": "r028", "group": "数学", "grade": 4, "text": "四年级上册数学期中卷，20道题，总分100，要有应用题", "expect": "paper"}
+{"id": "r029", "group": "数学", "grade": 4, "text": "小学四年级下册数学期中卷，20道题，总分100，要有应用题", "expect": "paper"}
+{"id": "r030", "group": "数学", "grade": 4, "text": "出一份小学四年级上册数学试卷，8道题，满分100分", "expect": "paper"}
+{"id": "r031", "group": "数学", "grade": 4, "text": "四年级数学，15题，难度中等，计算题多一点", "expect": "paper"}
+{"id": "r032", "group": "数学", "grade": 4, "text": "给小学四年级学生出一套数学练习，20道，选择、填空、计算都要有", "expect": "paper"}
+{"id": "r033", "group": "数学", "grade": 4, "text": "4年级数学，25题，难度中等，计算题多一点", "expect": "paper"}
+{"id": "r034", "group": "数学", "grade": 5, "text": "小学五年级下册数学单元测试，考“分数的加法和减法”，20题", "expect": "paper"}
+{"id": "r035", "group": "数学", "grade": 5, "text": "五年级数学，12题，难度中等，计算题多一点", "expect": "paper"}
+{"id": "r036", "group": "数学", "grade": 5, "text": "帮我出五年级上册第1单元的数学小测，25道题", "expect": "paper"}
+{"id": "r037", "group": "数学", "grade": 5, "text": "5年级数学，25题，难度中等，计算题多一点", "expect": "paper"}
+{"id": "r038", "group": "数学", "grade": 5, "text": "五年级数学，15题，难度中等，计算题多一点", "expect": "paper"}
+{"id": "r039", "group": "数学", "grade": 5, "text": "小学五年级数学期中卷，12道题，总分100，要有应用题", "expect": "paper"}
+{"id": "r040", "group": "数学", "grade": 5, "text": "小学五年级上册数学期中卷，20道题，总分100，要有应用题", "expect": "paper"}
+{"id": "r041", "group": "数学", "grade": 5, "text": "5年级下册数学单元测试，考“因数与倍数”，12题", "expect": "paper"}
+{"id": "r042", "group": "数学", "grade": 5, "text": "小学五年级下册数学期中卷，8道题，总分100，要有应用题", "expect": "paper"}
+{"id": "r043", "group": "数学", "grade": 6, "text": "出一份小学六年级上册数学试卷，15道题，满分100分", "expect": "paper"}
+{"id": "r044", "group": "数学", "grade": 6, "text": "小学六年级上册数学单元测试，考“分数除法”，20题", "expect": "paper"}
+{"id": "r045", "group": "数学", "grade": 6, "text": "6年级下册数学单元测试，考“百分数（二）”，20题", "expect": "paper"}
+{"id": "r046", "group": "数学", "grade": 6, "text": "小学六年级数学期中卷，8道题，总分120，要有应用题", "expect": "paper"}
+{"id": "r047", "group": "数学", "grade": 6, "text": "给六年级学生出一套数学练习，20道，选择、填空、计算都要有", "expect": "paper"}
+{"id": "r048", "group": "数学", "grade": 6, "text": "出一份小学六年级上册数学试卷，8道题，满分50分", "expect": "paper"}
+{"id": "r049", "group": "数学", "grade": 6, "text": "给小学六年级学生出一套数学练习，15道，选择、填空、计算都要有", "expect": "paper"}
+{"id": "r050", "group": "数学", "grade": 6, "text": "给六年级学生出一套数学练习，20道，选择、填空、计算都要有", "expect": "paper"}
+{"id": "r051", "group": "数学", "grade": 6, "text": "六年级数学期中卷，20道题，总分100，要有应用题", "expect": "paper"}
+{"id": "r052", "group": "数学", "grade": 7, "text": "7年级上册数学单元测试，考“整式的加减”，20题", "expect": "paper"}
+{"id": "r053", "group": "数学", "grade": 7, "text": "七年级数学，25题，难度中等，计算题多一点", "expect": "paper"}
+{"id": "r054", "group": "数学", "grade": 7, "text": "帮我出初一上册第5章的数学小测，20道题", "expect": "paper"}
+{"id": "r055", "group": "数学", "grade": 7, "text": "出一份初一上册数学试卷，12道题，满分50分", "expect": "paper"}
+{"id": "r056", "group": "数学", "grade": 7, "text": "给7年级学生出一套数学练习，25道，选择、填空、计算都要有", "expect": "paper"}
+{"id": "r057", "group": "数学", "grade": 7, "text": "出一份七年级数学试卷，12道题，满分100分", "expect": "paper"}
+{"id": "r058", "group": "数学", "grade": 7, "text": "7年级上册数学单元测试，考“一元一次方程”，25题", "expect": "paper"}
+{"id": "r059", "group": "数学", "grade": 7, "text": "给7年级学生出一套数学练习，12道，选择、填空、计算都要有", "expect": "paper"}
+{"id": "r060", "group": "数学", "grade": 7, "text": "初一上册数学单元测试，考“一元一次方程”，15题", "expect": "paper"}
+{"id": "r061", "group": "英语", "grade": 3, "text": "三年级下册英语 Unit 2 测试，10题", "expect": "paper"}
+{"id": "r062", "group": "英语", "grade": 3, "text": "三年级上册英语 Unit 3 测试，8题", "expect": "paper"}
+{"id": "r063", "group": "英语", "grade": 3, "text": "三年级英语练习，选择和填空为主，10题", "expect": "paper"}
+{"id": "r064", "group": "英语", "grade": 3, "text": "小学三年级英语练习，选择和填空为主，10题", "expect": "paper"}
+{"id": "r065", "group": "英语", "grade": 3, "text": "小学三年级上册英语 Unit 3 测试，12题", "expect": "paper"}
+{"id": "r066", "group": "英语", "grade": 4, "text": "四年级英语卷，15道题，要有阅读理解和书面表达", "expect": "paper"}
+{"id": "r067", "group": "英语", "grade": 4, "text": "小学四年级上册英语 Unit 6 测试，20题", "expect": "paper"}
+{"id": "r068", "group": "英语", "grade": 4, "text": "四年级上册英语 Unit 2 测试，12题", "expect": "paper"}
+{"id": "r069", "group": "英语", "grade": 4, "text": "四年级下册英语练习，选择和填空为主，15题", "expect": "paper"}
+{"id": "r070", "group": "英语", "grade": 4, "text": "4年级上册英语练习，选择和填空为主，12题", "expect": "paper"}
+{"id": "r071", "group": "英语", "grade": 5, "text": "5年级英语卷，20道题，要有阅读理解和书面表达", "expect": "paper"}
+{"id": "r072", "group": "英语", "grade": 5, "text": "出一份五年级英语试卷，15道题，满分100分", "expect": "paper"}
+{"id": "r073", "group": "英语", "grade": 5, "text": "五年级上册英语 Unit 4 测试，10题", "expect": "paper"}
+{"id": "r074", "group": "英语", "grade": 5, "text": "五年级英语卷，10道题，要有阅读理解和书面表达", "expect": "paper"}
+{"id": "r075", "group": "英语", "grade": 5, "text": "五年级英语卷，12道题，要有阅读理解和书面表达", "expect": "paper"}
+{"id": "r076", "group": "英语", "grade": 6, "text": "6年级英语卷，15道题，要有阅读理解和书面表达", "expect": "paper"}
+{"id": "r077", "group": "英语", "grade": 6, "text": "6年级下册英语 Unit 4 测试，12题", "expect": "paper"}
+{"id": "r078", "group": "英语", "grade": 6, "text": "6年级英语卷，20道题，要有阅读理解和书面表达", "expect": "paper"}
+{"id": "r079", "group": "英语", "grade": 6, "text": "6年级上册英语 Unit 5 测试，20题", "expect": "paper"}
+{"id": "r080", "group": "英语", "grade": 6, "text": "出一份小学六年级英语试卷，10道题，满分60分", "expect": "paper"}
+{"id": "r081", "group": "英语", "grade": 7, "text": "初一英语练习，选择和填空为主，12题", "expect": "paper"}
+{"id": "r082", "group": "英语", "grade": 7, "text": "7年级上册英语练习，选择和填空为主，12题", "expect": "paper"}
+{"id": "r083", "group": "英语", "grade": 7, "text": "七年级英语练习，选择和填空为主，15题", "expect": "paper"}
+{"id": "r084", "group": "英语", "grade": 7, "text": "初一英语练习，选择和填空为主，12题", "expect": "paper"}
+{"id": "r085", "group": "英语", "grade": 7, "text": "7年级英语练习，选择和填空为主，10题", "expect": "paper"}
+{"id": "r086", "group": "边界", "grade": 0, "text": "出一份七年级语文试卷", "expect": "reject"}
+{"id": "r087", "group": "边界", "grade": 0, "text": "八年级物理测试，10题", "expect": "reject"}
+{"id": "r088", "group": "边界", "grade": 0, "text": "八年级数学一次函数单元测试，20题", "expect": "reject"}
+{"id": "r089", "group": "边界", "grade": 0, "text": "二年级英语练习，10道题", "expect": "reject"}
+{"id": "r090", "group": "边界", "grade": 0, "text": "高一数学集合测试卷", "expect": "reject"}
+{"id": "r091", "group": "边界", "grade": 0, "text": "三年级数学，3道选择题，满分100分", "expect": "reject"}
+{"id": "r092", "group": "边界", "grade": 0, "text": "七年级数学，5道题", "expect": "paper"}
+{"id": "r093", "group": "边界", "grade": 0, "text": "四年级数学试卷", "expect": "paper"}
+{"id": "r094", "group": "边界", "grade": 0, "text": "出张卷子，三年级的，数学，题少点，10道左右", "expect": "paper"}
+{"id": "r095", "group": "边界", "grade": 0, "text": "五年级英语，只要阅读理解，2篇", "expect": "paper"}
+{"id": "r096", "group": "边界", "grade": 0, "text": "六年级数学 30 道题 100 分", "expect": "paper"}
+{"id": "r097", "group": "边界", "grade": 0, "text": "七年级上册数学第四章整式的加减，15题，计算题多一点", "expect": "paper"}
+{"id": "r098", "group": "边界", "grade": 0, "text": "三年级上册英语 Unit 3，12 题，满分 60", "expect": "paper"}
+{"id": "r099", "group": "边界", "grade": 0, "text": "二年级上册数学认识时间练习，8道题", "expect": "paper"}
+{"id": "r100", "group": "边界", "grade": 0, "text": "一年级下册数学认识图形练习，6题", "expect": "paper"}

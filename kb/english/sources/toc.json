@@ -1,0 +1,91 @@
+{
+ "edition": "小学：人教版 PEP（2012 年起陆续出版的版本）；七年级：人教版 Go for it!（2024 年版）",
+ "status": "据 AI 记忆整理，待对照所用教材逐册核对。人教版 PEP 小学英语 2024 年起分年级更换新版教材，三、四年级新版单元与此不同，请以学校实际使用的版本为准。",
+ "note": "只列单元标题。修改后运行 python -m exam_agent kb init --subject english 重新生成骨架卡片。",
+ "books": {
+  "三上": [
+   "Unit 1 Hello!",
+   "Unit 2 Colours",
+   "Unit 3 Look at me!",
+   "Unit 4 We love animals",
+   "Unit 5 Let's eat!",
+   "Unit 6 Happy birthday!"
+  ],
+  "三下": [
+   "Unit 1 Welcome back to school!",
+   "Unit 2 My family",
+   "Unit 3 At the zoo",
+   "Unit 4 Where is my car?",
+   "Unit 5 Do you like pears?",
+   "Unit 6 How many?"
+  ],
+  "四上": [
+   "Unit 1 My classroom",
+   "Unit 2 My schoolbag",
+   "Unit 3 My friends",
+   "Unit 4 My home",
+   "Unit 5 Dinner's ready",
+   "Unit 6 Meet my family!"
+  ],
+  "四下": [
+   "Unit 1 My school",
+   "Unit 2 What time is it?",
+   "Unit 3 Weather",
+   "Unit 4 At the farm",
+   "Unit 5 My clothes",
+   "Unit 6 Shopping"
+  ],
+  "五上": [
+   "Unit 1 What's he like?",
+   "Unit 2 My week",
+   "Unit 3 What would you like?",
+   "Unit 4 What can you do?",
+   "Unit 5 There is a big bed",
+   "Unit 6 In a nature park"
+  ],
+  "五下": [
+   "Unit 1 My day",
+   "Unit 2 My favourite season",
+   "Unit 3 My school calendar",
+   "Unit 4 When is the art show?",
+   "Unit 5 Whose dog is it?",
+   "Unit 6 Work quietly!"
+  ],
+  "六上": [
+   "Unit 1 How can I get there?",
+   "Unit 2 Ways to go to school",
+   "Unit 3 My weekend plan",
+   "Unit 4 I have a pen pal",
+   "Unit 5 What does he do?",
+   "Unit 6 How do you feel?"
+  ],
+  "六下": [
+   "Unit 1 How tall are you?",
+   "Unit 2 Last weekend",
+   "Unit 3 Where did you go?",
+   "Unit 4 Then and now"
+  ],
+  "七上": [
+   "Starter Unit 1 Hello!",
+   "Starter Unit 2 Keep Tidy!",
+   "Starter Unit 3 Welcome!",
+   "Unit 1 You and Me",
+   "Unit 2 We're Family!",
+   "Unit 3 My School",
+   "Unit 4 My Favourite Subject",
+   "Unit 5 Fun Clubs",
+   "Unit 6 A Day in the Life",
+   "Unit 7 Happy Birthday!"
+  ],
+  "七下": [
+   "Unit 1 Animal Friends",
+   "Unit 2 No Rules, No Order",
+   "Unit 3 Keep Fit",
+   "Unit 4 Eat Well",
+   "Unit 5 Here and Now",
+   "Unit 6 Rain or Shine",
+   "Unit 7 A Day to Remember",
+   "Unit 8 Once upon a Time"
+  ]
+ }
+}

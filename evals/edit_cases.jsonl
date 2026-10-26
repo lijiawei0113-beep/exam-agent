@@ -1,0 +1,53 @@
+{"id": "m01", "paper": "p_evalmath", "tag": "explicit", "message": "第 7 题太难，换一道简单点的，其他题别动", "action": "edit", "ops": ["rewrite"], "positions": [7]}
+{"id": "m02", "paper": "p_evalmath", "tag": "explicit", "message": "把第 4 题删掉", "action": "edit", "ops": ["remove"], "positions": [4]}
+{"id": "m03", "paper": "p_evalmath", "tag": "content", "message": "把讲苹果和梨的那道题改简单些", "action": "edit", "ops": ["rewrite"], "positions": [9]}
+{"id": "m04", "paper": "p_evalmath", "tag": "content", "message": "考棉花和铁的那道选择题换一道别的", "action": "edit", "ops": ["rewrite"], "positions": [2]}
+{"id": "m05", "paper": "p_evalmath", "tag": "content", "message": "小明上学放学那道题，路程改短一点", "action": "edit", "ops": ["rewrite", "patch"], "positions": [10]}
+{"id": "m06", "paper": "p_evalmath", "tag": "content", "message": "答案是 288 的那道题换一道", "action": "edit", "ops": ["rewrite"], "positions": [8]}
+{"id": "m07", "paper": "p_evalmath", "tag": "patch", "message": "第 6 题的 278 改成 268，其他不变", "action": "edit", "ops": ["patch"], "positions": [6]}
+{"id": "m08", "paper": "p_evalmath", "tag": "patch", "message": "第 3 题选项 D 改成 30", "action": "edit", "ops": ["patch"], "positions": [3]}
+{"id": "m09", "paper": "p_evalmath", "tag": "history", "message": "把第 3 题改回原来的", "action": "edit", "ops": ["restore"], "positions": [3], "from_version": 1}
+{"id": "m10", "paper": "p_evalmath", "tag": "history", "message": "第 6 题还是用原来那道吧", "action": "edit", "ops": ["restore"], "positions": [6], "from_version": 2}
+{"id": "m11", "paper": "p_evalmath", "tag": "history", "message": "我之前一共改过几次？都改了什么？", "action": "answer", "keywords": [["第3题", "第 3 题", "第三题"], ["第6题", "第 6 题", "第六题"]]}
+{"id": "m12", "paper": "p_evalmath", "tag": "qa", "message": "第 9 题答案是多少？怎么算的？", "action": "answer", "keywords": [["38"], ["96"]]}
+{"id": "m13", "paper": "p_evalmath", "tag": "qa", "message": "第 1 题为什么选 A？", "action": "answer", "keywords": [["603"]]}
+{"id": "m14", "paper": "p_evalmath", "tag": "qa", "message": "第 10 题的答案对吗？", "action": "answer", "keywords": [["1300"]]}
+{"id": "m15", "paper": "p_evalmath", "tag": "qa", "message": "第 9 题有没有多余条件？", "action": "answer", "keywords": [["班", "38 名", "人数"]]}
+{"id": "m16", "paper": "p_evalmath", "tag": "stats", "message": "选择题的答案分别是什么？分布合理吗？", "action": "answer", "keywords": [["A"], ["B"], ["C"]]}
+{"id": "m17", "paper": "p_evalmath", "tag": "stats", "message": "这份卷哪些题还需要我人工确认？", "action": "answer", "keywords": [["没有", "不需要", "都已", "均已", "全部"]]}
+{"id": "m18", "paper": "p_evalmath", "tag": "scope", "message": "第 8 题是不是超纲了？", "action": "answer", "keywords": [["没有超纲", "不超纲", "没超纲", "范围内", "不算超纲", "属于"]]}
+{"id": "m19", "paper": "p_evalmath", "tag": "discuss", "message": "这份卷整体难度怎么样？", "action": "answer"}
+{"id": "m20", "paper": "p_evalmath", "tag": "clarify", "message": "把那道题改一下", "action": "clarify"}
+{"id": "m21", "paper": "p_evalmath", "tag": "explicit", "message": "导出学生版和答案版", "action": "export"}
+{"id": "e01", "paper": "p_evalen", "tag": "explicit", "message": "第 2 题换一道", "action": "edit", "ops": ["rewrite"], "positions": [2]}
+{"id": "e02", "paper": "p_evalen", "tag": "content", "message": "讲机器人的那篇阅读太难了，换一篇", "action": "edit", "ops": ["rewrite"], "positions": [12]}
+{"id": "e03", "paper": "p_evalen", "tag": "content", "message": "答案是 funny 的那道填空换一下", "action": "edit", "ops": ["rewrite"], "positions": [8]}
+{"id": "e04", "paper": "p_evalen", "tag": "qa", "message": "第一篇阅读第 2 小题的答案是什么？依据是哪句话？", "action": "answer", "keywords": [["C", "park"], ["Saturday"]]}
+{"id": "e05", "paper": "p_evalen", "tag": "patch", "message": "第 11 题里的 Saturday 都改成 Sunday", "action": "edit", "ops": ["patch"], "positions": [11]}
+{"id": "e06", "paper": "p_evalen", "tag": "stats", "message": "第 12 题的短文有多少词？符合五年级要求吗？", "action": "answer", "keywords": [["86"], ["不符合", "不够", "不足", "少于", "偏短", "未达到", "达不到"]]}
+{"id": "e07", "paper": "p_evalen", "tag": "stats", "message": "选择题答案是不是太集中了？", "action": "answer", "keywords": [["B"]]}
+{"id": "e08", "paper": "p_evalen", "tag": "scope", "message": "第 5 题 There are 这个句型五年级上册学过吗？", "action": "answer"}
+{"id": "e09", "paper": "p_evalen", "tag": "clarify", "message": "这个不太好，改一下", "action": "clarify"}
+{"id": "e10", "paper": "p_evalen", "tag": "followup", "message": "好，就按你说的改", "action": "edit", "ops": ["patch", "rewrite"], "positions": [4], "turns": [{"role": "user", "content": "第 4 题有什么问题吗？"}, {"role": "assistant", "content": "第 4 题问星期四上什么课，选项 A“English and music”和选项 B“maths and science”都可以作为答案，存在两个正确选项。建议把选项 B 改成“Monday”，这样只有 A 正确。要我这样改吗？"}]}
+{"id": "m22", "paper": "p_evalmath", "tag": "content", "message": "解析里提到“连续退位减法”的那道题换一道", "action": "edit", "ops": ["rewrite"], "positions": [7]}
+{"id": "m23", "paper": "p_evalmath", "tag": "content", "message": "有多余条件的那道应用题换一道", "action": "edit", "ops": ["rewrite"], "positions": [9]}
+{"id": "e11", "paper": "p_evalen", "tag": "content", "message": "Robin 给花浇水的那篇阅读换一篇", "action": "edit", "ops": ["rewrite"], "positions": [12]}
+{"id": "e12", "paper": "p_evalen", "tag": "content", "message": "问 Zhang Peng 擅长什么的那篇阅读太简单了，换一篇", "action": "edit", "ops": ["rewrite"], "positions": [11]}
+{"id": "h01", "split": "holdout", "paper": "p_holdmath", "tag": "explicit", "message": "第 6 题换一道难一点的", "action": "edit", "ops": ["rewrite"], "positions": [6]}
+{"id": "h02", "split": "holdout", "paper": "p_holdmath", "tag": "content", "message": "王老师放书的那道题换个情境", "action": "edit", "ops": ["rewrite"], "positions": [9]}
+{"id": "h03", "split": "holdout", "paper": "p_holdmath", "tag": "content", "message": "答案是 7650 的那道题换一道", "action": "edit", "ops": ["rewrite"], "positions": [8]}
+{"id": "h04", "split": "holdout", "paper": "p_holdmath", "tag": "patch", "message": "第 7 题的 840 改成 864", "action": "edit", "ops": ["patch"], "positions": [7]}
+{"id": "h05", "split": "holdout", "paper": "p_holdmath", "tag": "patch", "message": "第 2 题选项 C 改成 4", "action": "edit", "ops": ["patch"], "positions": [2]}
+{"id": "h06", "split": "holdout", "paper": "p_holdmath", "tag": "history", "message": "第 5 题改回去", "action": "edit", "ops": ["restore"], "positions": [5], "from_version": 1}
+{"id": "h07", "split": "holdout", "paper": "p_holdmath", "tag": "history", "message": "第 5 题之前是什么题？", "action": "answer", "keywords": [["5 个万", "50003"]]}
+{"id": "h08", "split": "holdout", "paper": "p_holdmath", "tag": "qa", "message": "第 9 题怎么算？", "action": "answer", "keywords": [["216"], ["36"]]}
+{"id": "h09", "split": "holdout", "paper": "p_holdmath", "tag": "qa", "message": "第 10 题为什么是 4 小时？", "action": "answer", "keywords": [["8"], ["12"]]}
+{"id": "h10", "split": "holdout", "paper": "p_holdmath", "tag": "stats", "message": "哪几道题需要我确认？", "action": "answer", "keywords": [["第4题", "第 4 题", "第四题"]]}
+{"id": "h11", "split": "holdout", "paper": "p_holdmath", "tag": "stats", "message": "这份卷难度分布怎么样？基础题有几道？", "action": "answer", "keywords": [["7"]]}
+{"id": "h12", "split": "holdout", "paper": "p_holdmath", "tag": "scope", "message": "第 3 题考的是四年级上册的内容吗？", "action": "answer"}
+{"id": "h13", "split": "holdout", "paper": "p_holdmath", "tag": "clarify", "message": "上面那个不行，换掉", "action": "clarify"}
+{"id": "h14", "split": "holdout", "paper": "p_holdmath", "tag": "followup", "message": "可以，改吧", "action": "edit", "ops": ["patch", "rewrite"], "positions": [1], "turns": [{"role": "user", "content": "第 1 题有问题吗？"}, {"role": "assistant", "content": "第 1 题问 3 时整时针和分针的夹角，答案直角是对的。不过 3 时整太常见，建议改成 9 时整，学生需要多想一步，答案仍是直角。要我把 3 时改成 9 时吗？"}]}
+{"id": "h15", "split": "holdout", "paper": "p_evalen", "tag": "content", "message": "Wu Binbin 介绍新朋友的那篇阅读换一篇", "action": "edit", "ops": ["rewrite"], "positions": [11]}
+{"id": "h16", "split": "holdout", "paper": "p_evalen", "tag": "qa", "message": "第 9 题为什么填 is？", "action": "answer", "keywords": [["Is there", "there is", "Yes, there"]]}
+{"id": "h17", "split": "holdout", "paper": "p_evalen", "tag": "patch", "message": "第 6 题选项 A 的 eat 改成 behind", "action": "edit", "ops": ["patch"], "positions": [6]}
+{"id": "h18", "split": "holdout", "paper": "p_evalen", "tag": "clarify", "message": "那个阅读改一下", "action": "clarify"}

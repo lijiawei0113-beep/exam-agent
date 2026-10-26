@@ -1,0 +1,2150 @@
+{
+ "p_holdmath": [
+  {
+   "snapshot": {
+    "paper_id": "p_holdmath",
+    "title": "四年级上册数学试卷",
+    "request": {
+     "stage": "小学",
+     "grade": "四年级",
+     "subject": "数学",
+     "term": "上",
+     "topic": "",
+     "question_count": 10,
+     "total_score": 100,
+     "required_types": [
+      "选择题",
+      "填空题",
+      "计算题",
+      "应用题"
+     ],
+     "difficulty_note": "",
+     "constraints": [],
+     "extra_requirements": []
+    },
+    "blueprint": {
+     "slots": [
+      {
+       "slot_id": "S1",
+       "position": 1,
+       "qtype": "选择题",
+       "score": 5,
+       "knowledge_point": "角的分类",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "角的分类",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S2",
+       "position": 2,
+       "qtype": "选择题",
+       "score": 5,
+       "knowledge_point": "直线、射线和线段",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "直线、射线和线段",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S3",
+       "position": 3,
+       "qtype": "选择题",
+       "score": 5,
+       "knowledge_point": "积的变化规律",
+       "difficulty": "中等",
+       "cognitive_level": "掌握",
+       "intent": "积的变化规律",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S4",
+       "position": 4,
+       "qtype": "填空题",
+       "score": 5,
+       "knowledge_point": "公顷和平方千米",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "公顷和平方千米",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S5",
+       "position": 5,
+       "qtype": "填空题",
+       "score": 5,
+       "knowledge_point": "大数的认识",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "大数的认识",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S6",
+       "position": 6,
+       "qtype": "计算题",
+       "score": 15,
+       "knowledge_point": "三位数乘两位数",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "三位数乘两位数",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S7",
+       "position": 7,
+       "qtype": "计算题",
+       "score": 15,
+       "knowledge_point": "除数是两位数的除法",
+       "difficulty": "中等",
+       "cognitive_level": "掌握",
+       "intent": "除数是两位数的除法",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S8",
+       "position": 8,
+       "qtype": "计算题",
+       "score": 15,
+       "knowledge_point": "三位数乘两位数",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "三位数乘两位数",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S9",
+       "position": 9,
+       "qtype": "应用题",
+       "score": 15,
+       "knowledge_point": "乘除法解决问题",
+       "difficulty": "中等",
+       "cognitive_level": "运用",
+       "intent": "乘除法解决问题",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S10",
+       "position": 10,
+       "qtype": "应用题",
+       "score": 15,
+       "knowledge_point": "速度、时间和路程",
+       "difficulty": "基础",
+       "cognitive_level": "运用",
+       "intent": "速度、时间和路程",
+       "kp_id": "",
+       "scope_note": ""
+      }
+     ],
+     "rationale": "",
+     "scope": "",
+     "signals": {},
+     "vocabulary": []
+    },
+    "questions": [
+     {
+      "qid": "q_70a44461",
+      "slot_id": "S1",
+      "qtype": "选择题",
+      "score": 5,
+      "knowledge_point": "角的分类",
+      "difficulty": "基础",
+      "stem": "钟面上 3 时整，时针和分针所成的角是（ ）",
+      "options": [
+       "锐角",
+       "直角",
+       "钝角",
+       "平角"
+      ],
+      "answer": "B",
+      "analysis": "3 时整两针相差 3 个大格，即 90°，是直角。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_2267a19f",
+      "slot_id": "S2",
+      "qtype": "选择题",
+      "score": 5,
+      "knowledge_point": "直线、射线和线段",
+      "difficulty": "基础",
+      "stem": "过两点可以画（ ）条直线。",
+      "options": [
+       "1",
+       "2",
+       "3",
+       "无数"
+      ],
+      "answer": "A",
+      "analysis": "两点确定一条直线。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_627c7b22",
+      "slot_id": "S3",
+      "qtype": "选择题",
+      "score": 5,
+      "knowledge_point": "积的变化规律",
+      "difficulty": "中等",
+      "stem": "一个因数不变，另一个因数乘 10，积（ ）",
+      "options": [
+       "不变",
+       "乘 10",
+       "除以 10",
+       "乘 100"
+      ],
+      "answer": "B",
+      "analysis": "一个因数不变，积随另一个因数同样变化。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_2de3085d",
+      "slot_id": "S4",
+      "qtype": "填空题",
+      "score": 5,
+      "knowledge_point": "公顷和平方千米",
+      "difficulty": "基础",
+      "stem": "1 公顷 = ____ 平方米",
+      "options": [],
+      "answer": "10000",
+      "analysis": "1 公顷 = 10000 平方米。",
+      "verification": {
+       "status": "待老师确认",
+       "method": "没有可用的核对工具",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_84899d3c",
+      "slot_id": "S5",
+      "qtype": "填空题",
+      "score": 5,
+      "knowledge_point": "大数的认识",
+      "difficulty": "基础",
+      "stem": "由 5 个万和 3 个一组成的数是 ____",
+      "options": [],
+      "answer": "50003",
+      "analysis": "5 个万是 50000，再加 3。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_33aac064",
+      "slot_id": "S6",
+      "qtype": "计算题",
+      "score": 15,
+      "knowledge_point": "三位数乘两位数",
+      "difficulty": "基础",
+      "stem": "计算：125 × 16 =",
+      "options": [],
+      "answer": "2000",
+      "analysis": "125×8=1000，1000×2=2000。",
+      "verification": {
+       "status": "工具验证",
+       "method": "题干直接提取算式 → 精确计算",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_0d3c8fc6",
+      "slot_id": "S7",
+      "qtype": "计算题",
+      "score": 15,
+      "knowledge_point": "除数是两位数的除法",
+      "difficulty": "中等",
+      "stem": "计算：840 ÷ 24 =",
+      "options": [],
+      "answer": "35",
+      "analysis": "试商：24×35=840。",
+      "verification": {
+       "status": "工具验证",
+       "method": "题干直接提取算式 → 精确计算",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_eb63a248",
+      "slot_id": "S8",
+      "qtype": "计算题",
+      "score": 15,
+      "knowledge_point": "三位数乘两位数",
+      "difficulty": "基础",
+      "stem": "计算：306 × 25 =",
+      "options": [],
+      "answer": "7650",
+      "analysis": "306×25=7650。",
+      "verification": {
+       "status": "工具验证",
+       "method": "题干直接提取算式 → 精确计算",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_d509e8b5",
+      "slot_id": "S9",
+      "qtype": "应用题",
+      "score": 15,
+      "knowledge_point": "乘除法解决问题",
+      "difficulty": "中等",
+      "stem": "学校图书室新买来 18 套科普书，每套 12 本。图书管理员王老师把这些书平均放在 6 个书架上，每个书架放多少本？",
+      "options": [],
+      "answer": "36 本",
+      "analysis": "先求总本数 18×12=216（本），再平均分 216÷6=36（本）。",
+      "verification": {
+       "status": "工具验证",
+       "method": "盲解列算式 → 精确计算",
+       "detail": "18*12/6 ⇒ 36"
+      }
+     },
+     {
+      "qid": "q_fd4675bd",
+      "slot_id": "S10",
+      "qtype": "应用题",
+      "score": 15,
+      "knowledge_point": "速度、时间和路程",
+      "difficulty": "基础",
+      "stem": "一辆货车从甲地开往乙地，每小时行 65 千米，上午 8 时出发，中午 12 时到达。甲、乙两地相距多少千米？",
+      "options": [],
+      "answer": "260 千米",
+      "analysis": "经过时间 12-8=4（小时），路程 65×4=260（千米）。",
+      "verification": {
+       "status": "工具验证",
+       "method": "盲解列算式 → 精确计算",
+       "detail": "65*(12-8) ⇒ 260"
+      }
+     }
+    ]
+   },
+   "operation": "create",
+   "summary": "新建"
+  },
+  {
+   "snapshot": {
+    "paper_id": "p_holdmath",
+    "title": "四年级上册数学试卷",
+    "request": {
+     "stage": "小学",
+     "grade": "四年级",
+     "subject": "数学",
+     "term": "上",
+     "topic": "",
+     "question_count": 10,
+     "total_score": 100,
+     "required_types": [
+      "选择题",
+      "填空题",
+      "计算题",
+      "应用题"
+     ],
+     "difficulty_note": "",
+     "constraints": [],
+     "extra_requirements": []
+    },
+    "blueprint": {
+     "slots": [
+      {
+       "slot_id": "S1",
+       "position": 1,
+       "qtype": "选择题",
+       "score": 5,
+       "knowledge_point": "角的分类",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "角的分类",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S2",
+       "position": 2,
+       "qtype": "选择题",
+       "score": 5,
+       "knowledge_point": "直线、射线和线段",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "直线、射线和线段",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S3",
+       "position": 3,
+       "qtype": "选择题",
+       "score": 5,
+       "knowledge_point": "积的变化规律",
+       "difficulty": "中等",
+       "cognitive_level": "掌握",
+       "intent": "积的变化规律",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S4",
+       "position": 4,
+       "qtype": "填空题",
+       "score": 5,
+       "knowledge_point": "公顷和平方千米",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "公顷和平方千米",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S5",
+       "position": 5,
+       "qtype": "填空题",
+       "score": 5,
+       "knowledge_point": "大数的认识",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "大数的认识",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S6",
+       "position": 6,
+       "qtype": "计算题",
+       "score": 15,
+       "knowledge_point": "三位数乘两位数",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "三位数乘两位数",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S7",
+       "position": 7,
+       "qtype": "计算题",
+       "score": 15,
+       "knowledge_point": "除数是两位数的除法",
+       "difficulty": "中等",
+       "cognitive_level": "掌握",
+       "intent": "除数是两位数的除法",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S8",
+       "position": 8,
+       "qtype": "计算题",
+       "score": 15,
+       "knowledge_point": "三位数乘两位数",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "三位数乘两位数",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S9",
+       "position": 9,
+       "qtype": "应用题",
+       "score": 15,
+       "knowledge_point": "乘除法解决问题",
+       "difficulty": "中等",
+       "cognitive_level": "运用",
+       "intent": "乘除法解决问题",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S10",
+       "position": 10,
+       "qtype": "应用题",
+       "score": 15,
+       "knowledge_point": "速度、时间和路程",
+       "difficulty": "基础",
+       "cognitive_level": "运用",
+       "intent": "速度、时间和路程",
+       "kp_id": "",
+       "scope_note": ""
+      }
+     ],
+     "rationale": "",
+     "scope": "",
+     "signals": {},
+     "vocabulary": []
+    },
+    "questions": [
+     {
+      "qid": "q_70a44461",
+      "slot_id": "S1",
+      "qtype": "选择题",
+      "score": 5,
+      "knowledge_point": "角的分类",
+      "difficulty": "基础",
+      "stem": "钟面上 3 时整，时针和分针所成的角是（ ）",
+      "options": [
+       "锐角",
+       "直角",
+       "钝角",
+       "平角"
+      ],
+      "answer": "B",
+      "analysis": "3 时整两针相差 3 个大格，即 90°，是直角。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_2267a19f",
+      "slot_id": "S2",
+      "qtype": "选择题",
+      "score": 5,
+      "knowledge_point": "直线、射线和线段",
+      "difficulty": "基础",
+      "stem": "过两点可以画（ ）条直线。",
+      "options": [
+       "1",
+       "2",
+       "3",
+       "无数"
+      ],
+      "answer": "A",
+      "analysis": "两点确定一条直线。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_627c7b22",
+      "slot_id": "S3",
+      "qtype": "选择题",
+      "score": 5,
+      "knowledge_point": "积的变化规律",
+      "difficulty": "中等",
+      "stem": "一个因数不变，另一个因数乘 10，积（ ）",
+      "options": [
+       "不变",
+       "乘 10",
+       "除以 10",
+       "乘 100"
+      ],
+      "answer": "B",
+      "analysis": "一个因数不变，积随另一个因数同样变化。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_2de3085d",
+      "slot_id": "S4",
+      "qtype": "填空题",
+      "score": 5,
+      "knowledge_point": "公顷和平方千米",
+      "difficulty": "基础",
+      "stem": "1 公顷 = ____ 平方米",
+      "options": [],
+      "answer": "10000",
+      "analysis": "1 公顷 = 10000 平方米。",
+      "verification": {
+       "status": "待老师确认",
+       "method": "没有可用的核对工具",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_84899d3c",
+      "slot_id": "S5",
+      "qtype": "填空题",
+      "score": 5,
+      "knowledge_point": "大数的认识",
+      "difficulty": "基础",
+      "stem": "最大的六位数是 ____",
+      "options": [],
+      "answer": "999999",
+      "analysis": "六个数位都是 9。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_33aac064",
+      "slot_id": "S6",
+      "qtype": "计算题",
+      "score": 15,
+      "knowledge_point": "三位数乘两位数",
+      "difficulty": "基础",
+      "stem": "计算：125 × 16 =",
+      "options": [],
+      "answer": "2000",
+      "analysis": "125×8=1000，1000×2=2000。",
+      "verification": {
+       "status": "工具验证",
+       "method": "题干直接提取算式 → 精确计算",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_0d3c8fc6",
+      "slot_id": "S7",
+      "qtype": "计算题",
+      "score": 15,
+      "knowledge_point": "除数是两位数的除法",
+      "difficulty": "中等",
+      "stem": "计算：840 ÷ 24 =",
+      "options": [],
+      "answer": "35",
+      "analysis": "试商：24×35=840。",
+      "verification": {
+       "status": "工具验证",
+       "method": "题干直接提取算式 → 精确计算",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_eb63a248",
+      "slot_id": "S8",
+      "qtype": "计算题",
+      "score": 15,
+      "knowledge_point": "三位数乘两位数",
+      "difficulty": "基础",
+      "stem": "计算：306 × 25 =",
+      "options": [],
+      "answer": "7650",
+      "analysis": "306×25=7650。",
+      "verification": {
+       "status": "工具验证",
+       "method": "题干直接提取算式 → 精确计算",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_d509e8b5",
+      "slot_id": "S9",
+      "qtype": "应用题",
+      "score": 15,
+      "knowledge_point": "乘除法解决问题",
+      "difficulty": "中等",
+      "stem": "学校图书室新买来 18 套科普书，每套 12 本。图书管理员王老师把这些书平均放在 6 个书架上，每个书架放多少本？",
+      "options": [],
+      "answer": "36 本",
+      "analysis": "先求总本数 18×12=216（本），再平均分 216÷6=36（本）。",
+      "verification": {
+       "status": "工具验证",
+       "method": "盲解列算式 → 精确计算",
+       "detail": "18*12/6 ⇒ 36"
+      }
+     },
+     {
+      "qid": "q_fd4675bd",
+      "slot_id": "S10",
+      "qtype": "应用题",
+      "score": 15,
+      "knowledge_point": "速度、时间和路程",
+      "difficulty": "基础",
+      "stem": "一辆货车从甲地开往乙地，每小时行 65 千米，上午 8 时出发，中午 12 时到达。甲、乙两地相距多少千米？",
+      "options": [],
+      "answer": "260 千米",
+      "analysis": "经过时间 12-8=4（小时），路程 65×4=260（千米）。",
+      "verification": {
+       "status": "工具验证",
+       "method": "盲解列算式 → 精确计算",
+       "detail": "65*(12-8) ⇒ 260"
+      }
+     }
+    ]
+   },
+   "operation": "edit",
+   "summary": "第5题换一道 → 最大的六位数"
+  }
+ ],
+ "p_evalmath": [
+  {
+   "snapshot": {
+    "paper_id": "p_evalmath",
+    "title": "三年级上册数学试卷",
+    "request": {
+     "stage": "小学",
+     "grade": "三年级",
+     "subject": "数学",
+     "term": "上",
+     "topic": "",
+     "question_count": 10,
+     "total_score": 100,
+     "required_types": [
+      "选择题",
+      "填空题",
+      "计算题",
+      "应用题"
+     ],
+     "difficulty_note": "",
+     "constraints": [],
+     "extra_requirements": []
+    },
+    "blueprint": {
+     "slots": [
+      {
+       "slot_id": "S1",
+       "position": 1,
+       "qtype": "选择题",
+       "score": 5,
+       "knowledge_point": "万以内的加法",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "万以内的加法",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S2",
+       "position": 2,
+       "qtype": "选择题",
+       "score": 5,
+       "knowledge_point": "质量单位",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "质量单位",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S3",
+       "position": 3,
+       "qtype": "选择题",
+       "score": 5,
+       "knowledge_point": "长方形的周长",
+       "difficulty": "中等",
+       "cognitive_level": "掌握",
+       "intent": "长方形的周长",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S4",
+       "position": 4,
+       "qtype": "填空题",
+       "score": 5,
+       "knowledge_point": "时间单位换算",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "时间单位换算",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S5",
+       "position": 5,
+       "qtype": "填空题",
+       "score": 5,
+       "knowledge_point": "长度单位比较",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "长度单位比较",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S6",
+       "position": 6,
+       "qtype": "计算题",
+       "score": 15,
+       "knowledge_point": "三位数加三位数",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "三位数加三位数",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S7",
+       "position": 7,
+       "qtype": "计算题",
+       "score": 15,
+       "knowledge_point": "三位数减三位数",
+       "difficulty": "中等",
+       "cognitive_level": "掌握",
+       "intent": "三位数减三位数",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S8",
+       "position": 8,
+       "qtype": "计算题",
+       "score": 15,
+       "knowledge_point": "多位数乘一位数",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "多位数乘一位数",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S9",
+       "position": 9,
+       "qtype": "应用题",
+       "score": 15,
+       "knowledge_point": "两位数减两位数解决问题",
+       "difficulty": "中等",
+       "cognitive_level": "运用",
+       "intent": "两位数减两位数解决问题",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S10",
+       "position": 10,
+       "qtype": "应用题",
+       "score": 15,
+       "knowledge_point": "三位数加法解决问题",
+       "difficulty": "中等",
+       "cognitive_level": "运用",
+       "intent": "三位数加法解决问题",
+       "kp_id": "",
+       "scope_note": ""
+      }
+     ],
+     "rationale": "",
+     "scope": "",
+     "signals": {},
+     "vocabulary": []
+    },
+    "questions": [
+     {
+      "qid": "q_5ddb6130",
+      "slot_id": "S1",
+      "qtype": "选择题",
+      "score": 5,
+      "knowledge_point": "万以内的加法",
+      "difficulty": "基础",
+      "stem": "下面哪个算式的得数最接近 600？（ ）",
+      "options": [
+       "298 + 305",
+       "412 + 99",
+       "189 + 300",
+       "450 + 201"
+      ],
+      "answer": "A",
+      "analysis": "298+305=603，412+99=511，189+300=489，450+201=651，603 最接近 600。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_f23527d6",
+      "slot_id": "S2",
+      "qtype": "选择题",
+      "score": 5,
+      "knowledge_point": "质量单位",
+      "difficulty": "基础",
+      "stem": "1 千克棉花和 1000 克铁比较，（ ）",
+      "options": [
+       "棉花重",
+       "铁重",
+       "一样重",
+       "无法比较"
+      ],
+      "answer": "C",
+      "analysis": "1 千克 = 1000 克，两者一样重。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_72039017",
+      "slot_id": "S3",
+      "qtype": "选择题",
+      "score": 5,
+      "knowledge_point": "长方形的周长",
+      "difficulty": "中等",
+      "stem": "一个长方形的长是 8 厘米、宽是 5 厘米，它的周长是（ ）厘米。",
+      "options": [
+       "13",
+       "26",
+       "40",
+       "18"
+      ],
+      "answer": "B",
+      "analysis": "(8+5)×2=26（厘米）。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_6514e955",
+      "slot_id": "S4",
+      "qtype": "填空题",
+      "score": 5,
+      "knowledge_point": "时间单位换算",
+      "difficulty": "基础",
+      "stem": "3 时 = ____ 分",
+      "options": [],
+      "answer": "180",
+      "analysis": "1 时 = 60 分，3×60=180。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_5525319c",
+      "slot_id": "S5",
+      "qtype": "填空题",
+      "score": 5,
+      "knowledge_point": "长度单位比较",
+      "difficulty": "基础",
+      "stem": "在 ○ 里填上 >、< 或 =：5 千米 ○ 4900 米",
+      "options": [],
+      "answer": ">",
+      "analysis": "5 千米 = 5000 米，5000 > 4900。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_2c446509",
+      "slot_id": "S6",
+      "qtype": "计算题",
+      "score": 15,
+      "knowledge_point": "三位数加三位数",
+      "difficulty": "基础",
+      "stem": "计算：425 + 389 =",
+      "options": [],
+      "answer": "814",
+      "analysis": "个位 5+9=14 写 4 进 1……",
+      "verification": {
+       "status": "工具验证",
+       "method": "题干直接提取算式 → 精确计算",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_20891f4f",
+      "slot_id": "S7",
+      "qtype": "计算题",
+      "score": 15,
+      "knowledge_point": "三位数减三位数",
+      "difficulty": "中等",
+      "stem": "计算：702 - 365 =",
+      "options": [],
+      "answer": "337",
+      "analysis": "连续退位减法。",
+      "verification": {
+       "status": "工具验证",
+       "method": "题干直接提取算式 → 精确计算",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_21510bc5",
+      "slot_id": "S8",
+      "qtype": "计算题",
+      "score": 15,
+      "knowledge_point": "多位数乘一位数",
+      "difficulty": "基础",
+      "stem": "计算：48 × 6 =",
+      "options": [],
+      "answer": "288",
+      "analysis": "40×6=240，8×6=48，240+48=288。",
+      "verification": {
+       "status": "工具验证",
+       "method": "题干直接提取算式 → 精确计算",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_64589a55",
+      "slot_id": "S9",
+      "qtype": "应用题",
+      "score": 15,
+      "knowledge_point": "两位数减两位数解决问题",
+      "difficulty": "中等",
+      "stem": "学校组织三年级同学去秋游，一共有 4 个班，每个班有 38 名同学。老师还准备了一些水果，其中苹果有 96 个、梨有 58 个。苹果比梨多多少个？",
+      "options": [],
+      "answer": "38 个",
+      "analysis": "96 - 58 = 38（个）。班级人数是多余条件。",
+      "verification": {
+       "status": "工具验证",
+       "method": "盲解列算式 → 精确计算",
+       "detail": "96-58 ⇒ 38"
+      }
+     },
+     {
+      "qid": "q_40f2201a",
+      "slot_id": "S10",
+      "qtype": "应用题",
+      "score": 15,
+      "knowledge_point": "三位数加法解决问题",
+      "difficulty": "中等",
+      "stem": "小明家到学校的路程是 650 米。他每天上学走一趟、放学走一趟，中午不回家。小明一天上学、放学一共要走多少米？",
+      "options": [],
+      "answer": "1300 米",
+      "analysis": "650 + 650 = 1300（米）。",
+      "verification": {
+       "status": "工具验证",
+       "method": "盲解列算式 → 精确计算",
+       "detail": "650+650 ⇒ 1300"
+      }
+     }
+    ]
+   },
+   "operation": "create",
+   "summary": "新建"
+  },
+  {
+   "snapshot": {
+    "paper_id": "p_evalmath",
+    "title": "三年级上册数学试卷",
+    "request": {
+     "stage": "小学",
+     "grade": "三年级",
+     "subject": "数学",
+     "term": "上",
+     "topic": "",
+     "question_count": 10,
+     "total_score": 100,
+     "required_types": [
+      "选择题",
+      "填空题",
+      "计算题",
+      "应用题"
+     ],
+     "difficulty_note": "",
+     "constraints": [],
+     "extra_requirements": []
+    },
+    "blueprint": {
+     "slots": [
+      {
+       "slot_id": "S1",
+       "position": 1,
+       "qtype": "选择题",
+       "score": 5,
+       "knowledge_point": "万以内的加法",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "万以内的加法",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S2",
+       "position": 2,
+       "qtype": "选择题",
+       "score": 5,
+       "knowledge_point": "质量单位",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "质量单位",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S3",
+       "position": 3,
+       "qtype": "选择题",
+       "score": 5,
+       "knowledge_point": "正方形的周长",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "长方形的周长",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S4",
+       "position": 4,
+       "qtype": "填空题",
+       "score": 5,
+       "knowledge_point": "时间单位换算",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "时间单位换算",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S5",
+       "position": 5,
+       "qtype": "填空题",
+       "score": 5,
+       "knowledge_point": "长度单位比较",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "长度单位比较",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S6",
+       "position": 6,
+       "qtype": "计算题",
+       "score": 15,
+       "knowledge_point": "三位数加三位数",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "三位数加三位数",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S7",
+       "position": 7,
+       "qtype": "计算题",
+       "score": 15,
+       "knowledge_point": "三位数减三位数",
+       "difficulty": "中等",
+       "cognitive_level": "掌握",
+       "intent": "三位数减三位数",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S8",
+       "position": 8,
+       "qtype": "计算题",
+       "score": 15,
+       "knowledge_point": "多位数乘一位数",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "多位数乘一位数",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S9",
+       "position": 9,
+       "qtype": "应用题",
+       "score": 15,
+       "knowledge_point": "两位数减两位数解决问题",
+       "difficulty": "中等",
+       "cognitive_level": "运用",
+       "intent": "两位数减两位数解决问题",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S10",
+       "position": 10,
+       "qtype": "应用题",
+       "score": 15,
+       "knowledge_point": "三位数加法解决问题",
+       "difficulty": "中等",
+       "cognitive_level": "运用",
+       "intent": "三位数加法解决问题",
+       "kp_id": "",
+       "scope_note": ""
+      }
+     ],
+     "rationale": "",
+     "scope": "",
+     "signals": {},
+     "vocabulary": []
+    },
+    "questions": [
+     {
+      "qid": "q_5ddb6130",
+      "slot_id": "S1",
+      "qtype": "选择题",
+      "score": 5,
+      "knowledge_point": "万以内的加法",
+      "difficulty": "基础",
+      "stem": "下面哪个算式的得数最接近 600？（ ）",
+      "options": [
+       "298 + 305",
+       "412 + 99",
+       "189 + 300",
+       "450 + 201"
+      ],
+      "answer": "A",
+      "analysis": "298+305=603，412+99=511，189+300=489，450+201=651，603 最接近 600。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_f23527d6",
+      "slot_id": "S2",
+      "qtype": "选择题",
+      "score": 5,
+      "knowledge_point": "质量单位",
+      "difficulty": "基础",
+      "stem": "1 千克棉花和 1000 克铁比较，（ ）",
+      "options": [
+       "棉花重",
+       "铁重",
+       "一样重",
+       "无法比较"
+      ],
+      "answer": "C",
+      "analysis": "1 千克 = 1000 克，两者一样重。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_72039017",
+      "slot_id": "S3",
+      "qtype": "选择题",
+      "score": 5,
+      "knowledge_point": "正方形的周长",
+      "difficulty": "基础",
+      "stem": "一个正方形的边长是 6 厘米，它的周长是（ ）厘米。",
+      "options": [
+       "12",
+       "24",
+       "36",
+       "18"
+      ],
+      "answer": "B",
+      "analysis": "6×4=24（厘米）。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_6514e955",
+      "slot_id": "S4",
+      "qtype": "填空题",
+      "score": 5,
+      "knowledge_point": "时间单位换算",
+      "difficulty": "基础",
+      "stem": "3 时 = ____ 分",
+      "options": [],
+      "answer": "180",
+      "analysis": "1 时 = 60 分，3×60=180。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_5525319c",
+      "slot_id": "S5",
+      "qtype": "填空题",
+      "score": 5,
+      "knowledge_point": "长度单位比较",
+      "difficulty": "基础",
+      "stem": "在 ○ 里填上 >、< 或 =：5 千米 ○ 4900 米",
+      "options": [],
+      "answer": ">",
+      "analysis": "5 千米 = 5000 米，5000 > 4900。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_2c446509",
+      "slot_id": "S6",
+      "qtype": "计算题",
+      "score": 15,
+      "knowledge_point": "三位数加三位数",
+      "difficulty": "基础",
+      "stem": "计算：425 + 389 =",
+      "options": [],
+      "answer": "814",
+      "analysis": "个位 5+9=14 写 4 进 1……",
+      "verification": {
+       "status": "工具验证",
+       "method": "题干直接提取算式 → 精确计算",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_20891f4f",
+      "slot_id": "S7",
+      "qtype": "计算题",
+      "score": 15,
+      "knowledge_point": "三位数减三位数",
+      "difficulty": "中等",
+      "stem": "计算：702 - 365 =",
+      "options": [],
+      "answer": "337",
+      "analysis": "连续退位减法。",
+      "verification": {
+       "status": "工具验证",
+       "method": "题干直接提取算式 → 精确计算",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_21510bc5",
+      "slot_id": "S8",
+      "qtype": "计算题",
+      "score": 15,
+      "knowledge_point": "多位数乘一位数",
+      "difficulty": "基础",
+      "stem": "计算：48 × 6 =",
+      "options": [],
+      "answer": "288",
+      "analysis": "40×6=240，8×6=48，240+48=288。",
+      "verification": {
+       "status": "工具验证",
+       "method": "题干直接提取算式 → 精确计算",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_64589a55",
+      "slot_id": "S9",
+      "qtype": "应用题",
+      "score": 15,
+      "knowledge_point": "两位数减两位数解决问题",
+      "difficulty": "中等",
+      "stem": "学校组织三年级同学去秋游，一共有 4 个班，每个班有 38 名同学。老师还准备了一些水果，其中苹果有 96 个、梨有 58 个。苹果比梨多多少个？",
+      "options": [],
+      "answer": "38 个",
+      "analysis": "96 - 58 = 38（个）。班级人数是多余条件。",
+      "verification": {
+       "status": "工具验证",
+       "method": "盲解列算式 → 精确计算",
+       "detail": "96-58 ⇒ 38"
+      }
+     },
+     {
+      "qid": "q_40f2201a",
+      "slot_id": "S10",
+      "qtype": "应用题",
+      "score": 15,
+      "knowledge_point": "三位数加法解决问题",
+      "difficulty": "中等",
+      "stem": "小明家到学校的路程是 650 米。他每天上学走一趟、放学走一趟，中午不回家。小明一天上学、放学一共要走多少米？",
+      "options": [],
+      "answer": "1300 米",
+      "analysis": "650 + 650 = 1300（米）。",
+      "verification": {
+       "status": "工具验证",
+       "method": "盲解列算式 → 精确计算",
+       "detail": "650+650 ⇒ 1300"
+      }
+     }
+    ]
+   },
+   "operation": "edit",
+   "summary": "第3题太难 → 换成正方形周长的基础题"
+  },
+  {
+   "snapshot": {
+    "paper_id": "p_evalmath",
+    "title": "三年级上册数学试卷",
+    "request": {
+     "stage": "小学",
+     "grade": "三年级",
+     "subject": "数学",
+     "term": "上",
+     "topic": "",
+     "question_count": 10,
+     "total_score": 100,
+     "required_types": [
+      "选择题",
+      "填空题",
+      "计算题",
+      "应用题"
+     ],
+     "difficulty_note": "",
+     "constraints": [],
+     "extra_requirements": []
+    },
+    "blueprint": {
+     "slots": [
+      {
+       "slot_id": "S1",
+       "position": 1,
+       "qtype": "选择题",
+       "score": 5,
+       "knowledge_point": "万以内的加法",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "万以内的加法",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S2",
+       "position": 2,
+       "qtype": "选择题",
+       "score": 5,
+       "knowledge_point": "质量单位",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "质量单位",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S3",
+       "position": 3,
+       "qtype": "选择题",
+       "score": 5,
+       "knowledge_point": "正方形的周长",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "长方形的周长",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S4",
+       "position": 4,
+       "qtype": "填空题",
+       "score": 5,
+       "knowledge_point": "时间单位换算",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "时间单位换算",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S5",
+       "position": 5,
+       "qtype": "填空题",
+       "score": 5,
+       "knowledge_point": "长度单位比较",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "长度单位比较",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S6",
+       "position": 6,
+       "qtype": "计算题",
+       "score": 15,
+       "knowledge_point": "三位数加三位数",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "三位数加三位数",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S7",
+       "position": 7,
+       "qtype": "计算题",
+       "score": 15,
+       "knowledge_point": "三位数减三位数",
+       "difficulty": "中等",
+       "cognitive_level": "掌握",
+       "intent": "三位数减三位数",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S8",
+       "position": 8,
+       "qtype": "计算题",
+       "score": 15,
+       "knowledge_point": "多位数乘一位数",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "多位数乘一位数",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S9",
+       "position": 9,
+       "qtype": "应用题",
+       "score": 15,
+       "knowledge_point": "两位数减两位数解决问题",
+       "difficulty": "中等",
+       "cognitive_level": "运用",
+       "intent": "两位数减两位数解决问题",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S10",
+       "position": 10,
+       "qtype": "应用题",
+       "score": 15,
+       "knowledge_point": "三位数加法解决问题",
+       "difficulty": "中等",
+       "cognitive_level": "运用",
+       "intent": "三位数加法解决问题",
+       "kp_id": "",
+       "scope_note": ""
+      }
+     ],
+     "rationale": "",
+     "scope": "",
+     "signals": {},
+     "vocabulary": []
+    },
+    "questions": [
+     {
+      "qid": "q_5ddb6130",
+      "slot_id": "S1",
+      "qtype": "选择题",
+      "score": 5,
+      "knowledge_point": "万以内的加法",
+      "difficulty": "基础",
+      "stem": "下面哪个算式的得数最接近 600？（ ）",
+      "options": [
+       "298 + 305",
+       "412 + 99",
+       "189 + 300",
+       "450 + 201"
+      ],
+      "answer": "A",
+      "analysis": "298+305=603，412+99=511，189+300=489，450+201=651，603 最接近 600。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_f23527d6",
+      "slot_id": "S2",
+      "qtype": "选择题",
+      "score": 5,
+      "knowledge_point": "质量单位",
+      "difficulty": "基础",
+      "stem": "1 千克棉花和 1000 克铁比较，（ ）",
+      "options": [
+       "棉花重",
+       "铁重",
+       "一样重",
+       "无法比较"
+      ],
+      "answer": "C",
+      "analysis": "1 千克 = 1000 克，两者一样重。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_72039017",
+      "slot_id": "S3",
+      "qtype": "选择题",
+      "score": 5,
+      "knowledge_point": "正方形的周长",
+      "difficulty": "基础",
+      "stem": "一个正方形的边长是 6 厘米，它的周长是（ ）厘米。",
+      "options": [
+       "12",
+       "24",
+       "36",
+       "18"
+      ],
+      "answer": "B",
+      "analysis": "6×4=24（厘米）。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_6514e955",
+      "slot_id": "S4",
+      "qtype": "填空题",
+      "score": 5,
+      "knowledge_point": "时间单位换算",
+      "difficulty": "基础",
+      "stem": "3 时 = ____ 分",
+      "options": [],
+      "answer": "180",
+      "analysis": "1 时 = 60 分，3×60=180。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_5525319c",
+      "slot_id": "S5",
+      "qtype": "填空题",
+      "score": 5,
+      "knowledge_point": "长度单位比较",
+      "difficulty": "基础",
+      "stem": "在 ○ 里填上 >、< 或 =：5 千米 ○ 4900 米",
+      "options": [],
+      "answer": ">",
+      "analysis": "5 千米 = 5000 米，5000 > 4900。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_2c446509",
+      "slot_id": "S6",
+      "qtype": "计算题",
+      "score": 15,
+      "knowledge_point": "三位数加三位数",
+      "difficulty": "基础",
+      "stem": "计算：356 + 278 =",
+      "options": [],
+      "answer": "634",
+      "analysis": "个位 6+8=14 写 4 进 1……",
+      "verification": {
+       "status": "工具验证",
+       "method": "题干直接提取算式 → 精确计算",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_20891f4f",
+      "slot_id": "S7",
+      "qtype": "计算题",
+      "score": 15,
+      "knowledge_point": "三位数减三位数",
+      "difficulty": "中等",
+      "stem": "计算：702 - 365 =",
+      "options": [],
+      "answer": "337",
+      "analysis": "连续退位减法。",
+      "verification": {
+       "status": "工具验证",
+       "method": "题干直接提取算式 → 精确计算",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_21510bc5",
+      "slot_id": "S8",
+      "qtype": "计算题",
+      "score": 15,
+      "knowledge_point": "多位数乘一位数",
+      "difficulty": "基础",
+      "stem": "计算：48 × 6 =",
+      "options": [],
+      "answer": "288",
+      "analysis": "40×6=240，8×6=48，240+48=288。",
+      "verification": {
+       "status": "工具验证",
+       "method": "题干直接提取算式 → 精确计算",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_64589a55",
+      "slot_id": "S9",
+      "qtype": "应用题",
+      "score": 15,
+      "knowledge_point": "两位数减两位数解决问题",
+      "difficulty": "中等",
+      "stem": "学校组织三年级同学去秋游，一共有 4 个班，每个班有 38 名同学。老师还准备了一些水果，其中苹果有 96 个、梨有 58 个。苹果比梨多多少个？",
+      "options": [],
+      "answer": "38 个",
+      "analysis": "96 - 58 = 38（个）。班级人数是多余条件。",
+      "verification": {
+       "status": "工具验证",
+       "method": "盲解列算式 → 精确计算",
+       "detail": "96-58 ⇒ 38"
+      }
+     },
+     {
+      "qid": "q_40f2201a",
+      "slot_id": "S10",
+      "qtype": "应用题",
+      "score": 15,
+      "knowledge_point": "三位数加法解决问题",
+      "difficulty": "中等",
+      "stem": "小明家到学校的路程是 650 米。他每天上学走一趟、放学走一趟，中午不回家。小明一天上学、放学一共要走多少米？",
+      "options": [],
+      "answer": "1300 米",
+      "analysis": "650 + 650 = 1300（米）。",
+      "verification": {
+       "status": "工具验证",
+       "method": "盲解列算式 → 精确计算",
+       "detail": "650+650 ⇒ 1300"
+      }
+     }
+    ]
+   },
+   "operation": "edit",
+   "summary": "第6题换一道 → 计算 356 + 278"
+  }
+ ],
+ "p_evalen": [
+  {
+   "snapshot": {
+    "paper_id": "p_evalen",
+    "title": "五年级上册英语试卷",
+    "request": {
+     "stage": "小学",
+     "grade": "五年级",
+     "subject": "英语",
+     "term": "上",
+     "topic": "",
+     "question_count": 13,
+     "total_score": 100,
+     "required_types": [
+      "选择题",
+      "填空题",
+      "阅读理解",
+      "书面表达"
+     ],
+     "difficulty_note": "",
+     "constraints": [],
+     "extra_requirements": []
+    },
+    "blueprint": {
+     "slots": [
+      {
+       "slot_id": "S1",
+       "position": 1,
+       "qtype": "选择题",
+       "score": 5,
+       "knowledge_point": "What would you like to eat?",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "What would you like to eat?",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S2",
+       "position": 2,
+       "qtype": "选择题",
+       "score": 5,
+       "knowledge_point": "描述人物性格",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "描述人物性格",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S3",
+       "position": 3,
+       "qtype": "选择题",
+       "score": 5,
+       "knowledge_point": "What day is it today?",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "What day is it today?",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S4",
+       "position": 4,
+       "qtype": "选择题",
+       "score": 5,
+       "knowledge_point": "课程表",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "课程表",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S5",
+       "position": 5,
+       "qtype": "选择题",
+       "score": 5,
+       "knowledge_point": "There is / There are",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "There is / There are",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S6",
+       "position": 6,
+       "qtype": "选择题",
+       "score": 5,
+       "knowledge_point": "方位介词",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "方位介词",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S7",
+       "position": 7,
+       "qtype": "填空题",
+       "score": 5,
+       "knowledge_point": "I can...",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "I can...",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S8",
+       "position": 8,
+       "qtype": "填空题",
+       "score": 5,
+       "knowledge_point": "描述人物性格",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "描述人物性格",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S9",
+       "position": 9,
+       "qtype": "填空题",
+       "score": 5,
+       "knowledge_point": "Is there...?",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "Is there...?",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S10",
+       "position": 10,
+       "qtype": "填空题",
+       "score": 5,
+       "knowledge_point": "日常活动",
+       "difficulty": "基础",
+       "cognitive_level": "掌握",
+       "intent": "日常活动",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S11",
+       "position": 11,
+       "qtype": "阅读理解",
+       "score": 15,
+       "knowledge_point": "人物介绍阅读",
+       "difficulty": "中等",
+       "cognitive_level": "掌握",
+       "intent": "人物介绍阅读",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S12",
+       "position": 12,
+       "qtype": "阅读理解",
+       "score": 15,
+       "knowledge_point": "机器人阅读",
+       "difficulty": "中等",
+       "cognitive_level": "掌握",
+       "intent": "机器人阅读",
+       "kp_id": "",
+       "scope_note": ""
+      },
+      {
+       "slot_id": "S13",
+       "position": 13,
+       "qtype": "书面表达",
+       "score": 20,
+       "knowledge_point": "书面表达：我最喜欢的一天",
+       "difficulty": "中等",
+       "cognitive_level": "掌握",
+       "intent": "书面表达：我最喜欢的一天",
+       "kp_id": "",
+       "scope_note": ""
+      }
+     ],
+     "rationale": "",
+     "scope": "",
+     "signals": {},
+     "vocabulary": []
+    },
+    "questions": [
+     {
+      "qid": "q_963a0032",
+      "slot_id": "S1",
+      "qtype": "选择题",
+      "score": 5,
+      "knowledge_point": "What would you like to eat?",
+      "difficulty": "基础",
+      "stem": "—What would you like to eat? —____",
+      "options": [
+       "I like music.",
+       "I'd like some noodles.",
+       "It's Monday."
+      ],
+      "answer": "B",
+      "analysis": "问想吃什么，用 I'd like... 回答。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_63d82b13",
+      "slot_id": "S2",
+      "qtype": "选择题",
+      "score": 5,
+      "knowledge_point": "描述人物性格",
+      "difficulty": "基础",
+      "stem": "My sister is very ____. She always helps others.",
+      "options": [
+       "lazy",
+       "kind",
+       "short"
+      ],
+      "answer": "B",
+      "analysis": "乐于助人说明她很善良。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_99f814ca",
+      "slot_id": "S3",
+      "qtype": "选择题",
+      "score": 5,
+      "knowledge_point": "What day is it today?",
+      "difficulty": "基础",
+      "stem": "—What day is it today? —____",
+      "options": [
+       "It's sunny.",
+       "It's Wednesday.",
+       "It's my book."
+      ],
+      "answer": "B",
+      "analysis": "问星期几。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_8b0d5a39",
+      "slot_id": "S4",
+      "qtype": "选择题",
+      "score": 5,
+      "knowledge_point": "课程表",
+      "difficulty": "基础",
+      "stem": "—What do you have on Thursdays? —I have ____.",
+      "options": [
+       "English and music",
+       "maths and science",
+       "tired"
+      ],
+      "answer": "A",
+      "analysis": "问星期四上什么课。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_46426765",
+      "slot_id": "S5",
+      "qtype": "选择题",
+      "score": 5,
+      "knowledge_point": "There is / There are",
+      "difficulty": "基础",
+      "stem": "There ____ two bikes behind the house.",
+      "options": [
+       "is",
+       "are",
+       "am"
+      ],
+      "answer": "B",
+      "analysis": "two bikes 是复数，用 are。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_c8c5cf37",
+      "slot_id": "S6",
+      "qtype": "选择题",
+      "score": 5,
+      "knowledge_point": "方位介词",
+      "difficulty": "基础",
+      "stem": "The park is ____ the school.",
+      "options": [
+       "eat",
+       "tall",
+       "near"
+      ],
+      "answer": "C",
+      "analysis": "near 表示在……附近。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_d190cbbf",
+      "slot_id": "S7",
+      "qtype": "填空题",
+      "score": 5,
+      "knowledge_point": "I can...",
+      "difficulty": "基础",
+      "stem": "I can ____ (做饭) for my mother.",
+      "options": [],
+      "answer": "cook",
+      "analysis": "做饭 cook。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_04fc2ccb",
+      "slot_id": "S8",
+      "qtype": "填空题",
+      "score": 5,
+      "knowledge_point": "描述人物性格",
+      "difficulty": "基础",
+      "stem": "My English teacher is very ____ (有趣的).",
+      "options": [],
+      "answer": "funny",
+      "analysis": "有趣的 funny。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_f88b7e77",
+      "slot_id": "S9",
+      "qtype": "填空题",
+      "score": 5,
+      "knowledge_point": "Is there...?",
+      "difficulty": "基础",
+      "stem": "—Is there a river in the park? —Yes, there ____.",
+      "options": [],
+      "answer": "is",
+      "analysis": "Is there 的肯定回答。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_d8771436",
+      "slot_id": "S10",
+      "qtype": "填空题",
+      "score": 5,
+      "knowledge_point": "日常活动",
+      "difficulty": "基础",
+      "stem": "We often ____ (打扫) the classroom on Fridays.",
+      "options": [],
+      "answer": "clean",
+      "analysis": "打扫 clean。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解独立作答",
+       "detail": ""
+      }
+     },
+     {
+      "qid": "q_bdb41334",
+      "slot_id": "S11",
+      "qtype": "阅读理解",
+      "score": 15,
+      "knowledge_point": "人物介绍阅读",
+      "difficulty": "中等",
+      "stem": "Read the passage and choose the correct answers.\nHello, I am Wu Binbin. I am in Class 1, Grade 5. I have a new friend. His name is Zhang Peng. He is tall and strong. He is good at football. He often plays football with me after school. Zhang Peng is very kind. He helps me with my maths homework. On Saturday we often go to the park near our school. We fly kites there. Sometimes we read books under a big tree. My mother likes Zhang Peng too. She says he is polite and hard-working. I am happy to have a good friend like him.\n1. What is Zhang Peng good at? A. Basketball. B. Football. C. Drawing.\n2. What do they often do on Saturday? A. Watch TV. B. Cook dinner. C. Go to the park.\n3. What does Zhang Peng help Wu Binbin with? A. English. B. Maths. C. Music.",
+      "options": [],
+      "answer": "1. B 2. C 3. B",
+      "analysis": "依据短文第 2、5、4 句作答。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解逐题独立作答",
+       "detail": "3 个小题全部一致"
+      }
+     },
+     {
+      "qid": "q_d2ed32a9",
+      "slot_id": "S12",
+      "qtype": "阅读理解",
+      "score": 15,
+      "knowledge_point": "机器人阅读",
+      "difficulty": "中等",
+      "stem": "Read the passage and choose the correct answers.\nThis is my robot. Its name is Robin. It is short but very clever. It can speak Chinese and English. Every morning Robin helps my grandpa in the kitchen. It can make a salad and some tea. Robin is strict, too. I must do my homework before I watch TV. In the afternoon Robin cleans the room. On Wednesdays it waters the flowers in the garden. My grandpa likes Robin very much. He says Robin is helpful. I love my robot. It is my good friend.\n1. What can Robin speak? A. Chinese and English. B. Only English. C. Only Chinese.\n2. When does Robin water the flowers? A. On Mondays. B. On Wednesdays. C. On Fridays.\n3. What does grandpa think of Robin? A. Funny. B. Helpful. C. Lazy.",
+      "options": [],
+      "answer": "1. A 2. B 3. B",
+      "analysis": "依据短文作答。",
+      "verification": {
+       "status": "独立复核一致",
+       "method": "盲解逐题独立作答",
+       "detail": "3 个小题全部一致"
+      }
+     },
+     {
+      "qid": "q_3911c64c",
+      "slot_id": "S13",
+      "qtype": "书面表达",
+      "score": 20,
+      "knowledge_point": "书面表达：我最喜欢的一天",
+      "difficulty": "中等",
+      "stem": "以 My Favourite Day 为题，写一篇不少于 5 句话的短文，介绍你最喜欢星期几以及那天做什么。",
+      "options": [],
+      "answer": "范文：My favourite day is Saturday. I often play football in the morning. ...",
+      "analysis": "评分要点：内容完整、语句通顺。",
+      "verification": {
+       "status": "待老师确认",
+       "method": "主观题：范文与评分要点由老师把握",
+       "detail": ""
+      }
+     }
+    ]
+   },
+   "operation": "create",
+   "summary": "新建"
+  }
+ ]
+}
